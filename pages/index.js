@@ -44,10 +44,7 @@ export default function Home() {
                   <div>
                     <h2>Medical Records</h2>
                     <p>Simple, Smart & Seamless</p>
-                    <a
-                      href="https://en.wikipedia.org/wiki/Jellyfish"
-                      target="_blank"
-                    >
+                    <a href="#" target="_blank">
                       explore
                     </a>
                   </div>
@@ -60,10 +57,7 @@ export default function Home() {
                     <h2>Patient care</h2>
 
                     <p>Simple, smart & seemless</p>
-                    <a
-                      href="https://en.wikipedia.org/wiki/Seahorse"
-                      target="_blank"
-                    >
+                    <a href="#" target="_blank">
                       explore
                     </a>
                   </div>
@@ -76,10 +70,7 @@ export default function Home() {
                   <div>
                     <h2>Patient History</h2>
                     <p>Simple, smart & seemless</p>
-                    <a
-                      href="https://en.wikipedia.org/wiki/Octopus"
-                      target="_blank"
-                    >
+                    <a href="#" target="_blank">
                       explore
                     </a>
                   </div>
