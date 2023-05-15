@@ -454,6 +454,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 /* .banner_section Header section */
@@ -497,6 +498,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: 600;
   margin-bottom: 10px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .about_section h2 {
@@ -612,6 +614,14 @@ input[type="number"]::-webkit-outer-spin-button {
   justify-content: center;
   border: 2px solid #6365e3;
   border-radius: 15px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.Reminder_box:hover {
+  background-color: #6365e3;
+}
+.Reminder_box:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .Reminder_box_heading {
