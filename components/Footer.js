@@ -67,7 +67,7 @@ function Footer() {
                       className="form_ctr"
                       style={{ paddingTop: "8px" }}
                     >
-                      <option value="Partner" selected="true">
+                      <option value="Partner" defaultValue={true}>
                         Partner
                       </option>
                       <option value="Patient">Patient</option>
@@ -81,7 +81,7 @@ function Footer() {
                       id="name"
                       name="name"
                       className="form_ctr"
-                      placeholder="Enter your name"
+                      placeholder="Enter Name"
                     />
                   </div>
                 </div>
@@ -94,7 +94,7 @@ function Footer() {
                       id="name"
                       name="name"
                       className="form_ctr"
-                      placeholder="Enter your phone"
+                      placeholder="Enter Phone Number"
                     />
                   </div>
                   <div className="form_width">
@@ -104,7 +104,7 @@ function Footer() {
                       id="name"
                       name="name"
                       className="form_ctr"
-                      placeholder="Enter your email"
+                      placeholder="Enter Email ID"
                     />
                   </div>
                 </div>

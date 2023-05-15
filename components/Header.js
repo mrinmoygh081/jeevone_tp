@@ -7,7 +7,25 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { useEffect, useRef, useState } from "react";
+
 function Header() {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const dropdown = useRef(null);
+
+  useEffect(() => {
+    // only add the event listener when the dropdown is opened
+    if (!showDropdown) return;
+    function handleClick(event) {
+      if (dropdown.current && !dropdown.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    }
+    window.addEventListener("click", handleClick);
+    // clean up
+    return () => window.removeEventListener("click", handleClick);
+  }, [showDropdown]);
+
   return (
     <header>
       <nav className="container navbar">
@@ -16,12 +34,19 @@ function Header() {
         </div>
 
         <div className="dropdown_button">
-          <a href="#" className="btn" id="btn">
+          <button
+            onClick={() => setShowDropdown((b) => !b)}
+            className="btn"
+            ref={dropdown}
+          >
             <span className="me-2"> Signup / Login </span>
-            <FontAwesomeIcon icon={faChevronDown} />
-          </a>
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className={showDropdown ? "arrow" : ""}
+            />
+          </button>
 
-          <div className="dropdown" id="dropdown">
+          <div className={"dropdown " + (showDropdown ? "show" : "")}>
             <a href="#create">
               <FontAwesomeIcon icon={faUserDoctor} />
               <span>Doctor Login</span>
