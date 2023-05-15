@@ -37,49 +37,61 @@ export default function Home() {
                 modifier: 1,
                 slideShadows: true,
               }}
-              modules={[EffectCoverflow, Autoplay]}
+              modules={[EffectCoverflow]}
               className="mySwiper"
             >
               {/* <div className="swiper-wrapper"> */}
               <SwiperSlide className="swiper-slide">
                 {/* <div className="swiper-slide swiper-slide--one position-relative"> */}
-                <img src="/images/banner.png" alt="" className="banner_img" />
-                <div>
+                <img
+                  src="/images/hero_slider/img1.png"
+                  alt=""
+                  className="banner_img"
+                />
+                {/* <div>
                   <h2>Medical Records</h2>
                   <p>Simple, Smart & Seamless</p>
                   <a href="#" target="_blank">
                     explore
                   </a>
-                </div>
+                </div> */}
                 {/* </div> */}
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                {/* <div className="swiper-slide swiper-slide--two"> */}
-                <img src="/images/banner.png" alt="" className="banner_img" />
-                <div>
-                  <h2>Patient care</h2>
-
-                  <p>Simple, smart & seemless</p>
-                  <a href="#" target="_blank">
-                    explore
-                  </a>
-                </div>
-                {/* </div> */}
+                <img
+                  src="/images/hero_slider/img2.png"
+                  alt=""
+                  className="banner_img"
+                />
               </SwiperSlide>
-
               <SwiperSlide className="swiper-slide">
-                {/* <div className="swiper-slide swiper-slide--three"> */}
-                <img src="/images/banner.png" alt="" className="banner_img" />
-                <div>
-                  <h2>Patient History</h2>
-                  <p>Simple, smart & seemless</p>
-                  <a href="#" target="_blank">
-                    explore
-                  </a>
-                </div>
-                {/* </div> */}
+                <img
+                  src="/images/hero_slider/img3.png"
+                  alt=""
+                  className="banner_img"
+                />
               </SwiperSlide>
-              {/* </div> */}
+              <SwiperSlide className="swiper-slide">
+                <img
+                  src="/images/hero_slider/img4.png"
+                  alt=""
+                  className="banner_img"
+                />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img
+                  src="/images/hero_slider/img5.png"
+                  alt=""
+                  className="banner_img"
+                />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img
+                  src="/images/hero_slider/img6.png"
+                  alt=""
+                  className="banner_img"
+                />
+              </SwiperSlide>
             </Swiper>
             {/* </div> */}
           </div>
