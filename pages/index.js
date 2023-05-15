@@ -6,7 +6,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
 
 export default function Home() {
@@ -26,6 +26,10 @@ export default function Home() {
               grabCursor={true}
               centeredSlides={true}
               slidesPerView={"auto"}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
@@ -33,51 +37,49 @@ export default function Home() {
                 modifier: 1,
                 slideShadows: true,
               }}
-              pagination={true}
-              modules={[EffectCoverflow, Pagination]}
+              modules={[EffectCoverflow, Autoplay]}
               className="mySwiper"
             >
-              <div className="swiper-wrapper">
-                <SwiperSlide className="swiper-slide">
-                  {/* <div className="swiper-slide swiper-slide--one position-relative"> */}
-                  <img src="/images/banner.png" alt="" className="banner_img" />
-                  <div>
-                    <h2>Medical Records</h2>
-                    <p>Simple, Smart & Seamless</p>
-                    <a href="#" target="_blank">
-                      explore
-                    </a>
-                  </div>
-                  {/* </div> */}
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  {/* <div className="swiper-slide swiper-slide--two"> */}
-                  <img src="/images/banner.png" alt="" className="banner_img" />
-                  <div>
-                    <h2>Patient care</h2>
+              {/* <div className="swiper-wrapper"> */}
+              <SwiperSlide className="swiper-slide">
+                {/* <div className="swiper-slide swiper-slide--one position-relative"> */}
+                <img src="/images/banner.png" alt="" className="banner_img" />
+                <div>
+                  <h2>Medical Records</h2>
+                  <p>Simple, Smart & Seamless</p>
+                  <a href="#" target="_blank">
+                    explore
+                  </a>
+                </div>
+                {/* </div> */}
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                {/* <div className="swiper-slide swiper-slide--two"> */}
+                <img src="/images/banner.png" alt="" className="banner_img" />
+                <div>
+                  <h2>Patient care</h2>
 
-                    <p>Simple, smart & seemless</p>
-                    <a href="#" target="_blank">
-                      explore
-                    </a>
-                  </div>
-                  {/* </div> */}
-                </SwiperSlide>
+                  <p>Simple, smart & seemless</p>
+                  <a href="#" target="_blank">
+                    explore
+                  </a>
+                </div>
+                {/* </div> */}
+              </SwiperSlide>
 
-                <SwiperSlide className="swiper-slide">
-                  {/* <div className="swiper-slide swiper-slide--three"> */}
-                  <img src="/images/banner.png" alt="" className="banner_img" />
-                  <div>
-                    <h2>Patient History</h2>
-                    <p>Simple, smart & seemless</p>
-                    <a href="#" target="_blank">
-                      explore
-                    </a>
-                  </div>
-                  {/* </div> */}
-                </SwiperSlide>
-              </div>
-              <div className="swiper-pagination"></div>
+              <SwiperSlide className="swiper-slide">
+                {/* <div className="swiper-slide swiper-slide--three"> */}
+                <img src="/images/banner.png" alt="" className="banner_img" />
+                <div>
+                  <h2>Patient History</h2>
+                  <p>Simple, smart & seemless</p>
+                  <a href="#" target="_blank">
+                    explore
+                  </a>
+                </div>
+                {/* </div> */}
+              </SwiperSlide>
+              {/* </div> */}
             </Swiper>
             {/* </div> */}
           </div>
@@ -319,7 +321,11 @@ export default function Home() {
                 </div>
                 <div className="col-md-3 col-6 reminder">
                   <div className="Reminder_box">
-                    <img src="/images/Vaccinations.png" alt="" />
+                    <img
+                      src="/images/Vaccinations.png"
+                      alt=""
+                      style={{ transform: "translateX(6px)" }}
+                    />
                   </div>
                   <h6>Vaccinations</h6>
                 </div>
@@ -472,7 +478,7 @@ export default function Home() {
         </section>
 
         <section className="about_section">
-          <h2>About Us</h2>
+          <h2>ABOUT US</h2>
           <div className="about_1st">
             <div className="container">
               <div className="row align-items-center">
@@ -597,7 +603,7 @@ export default function Home() {
 
         <section className="Creators_section">
           <div className="container">
-            <h2>Creators corner</h2>
+            <h2>CREATORS CORNER</h2>
             <div className="row mb-4">
               <div className="col-12 col-md-6 mb-5 mb-lg-0">
                 <div className="creator_card">
