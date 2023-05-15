@@ -503,7 +503,6 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 45px;
   color: #0a0a6d;
   font-weight: 600;
-  padding: 24px 0px;
 }
 
 .about_1st {
@@ -512,7 +511,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .about_2st {
-  padding: 50px 0px;
+  padding: 80px 0px 50px;
+}
+.about_1st h3,
+.about_2st h3 {
+  text-transform: uppercase;
+  padding: 0;
+  font-size: 36px;
 }
 
 .about_section p {
@@ -749,14 +754,17 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .tab p {
   margin-top: 10px;
-  color: #fff;
+  color: #ccc;
   font-size: 14px;
   font-weight: 600;
 }
-
+.w_90 {
+  width: 90%;
+}
 .tab img {
-  height: 50px;
+  height: auto;
   width: 50px;
+  filter: grayscale(1) contrast(3) blur(1px);
 }
 
 .panels {
@@ -778,6 +786,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .panel p {
   color: white;
+  margin: 0;
+}
+.pl_30 {
+  padding-left: 30px;
 }
 
 @keyframes fadein {
@@ -820,6 +832,22 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 125px;
 }
 
+#one:checked ~ .tabs #one-tab img,
+#two:checked ~ .tabs #two-tab img,
+#three:checked ~ .tabs #three-tab img,
+#four:checked ~ .tabs #four-tab img,
+#five:checked ~ .tabs #five-tab img,
+#six:checked ~ .tabs #six-tab img {
+  filter: initial;
+}
+
+#two:checked ~ .tabs #two-tab p,
+#three:checked ~ .tabs #three-tab p,
+#four:checked ~ .tabs #four-tab p,
+#five:checked ~ .tabs #five-tab p {
+  color: #fff;
+}
+
 #one:checked ~ .tabs #one-tab {
   background: #3a3cc6;
   color: white;
@@ -831,6 +859,13 @@ input[type="number"]::-webkit-outer-spin-button {
   background: #3a3cc6;
   color: white;
   border-radius: 0px 15px 25px 25px;
+  height: 125px;
+}
+
+#one:checked ~ .tabs #one-tab {
+  background: #3a3cc6;
+  color: white;
+  border-radius: 15px 0px 25px 25px;
   height: 125px;
 }
 
@@ -1279,7 +1314,6 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 32px;
     color: #0a0a6d;
     font-weight: 600;
-    padding: 24px 0px 15px;
   }
 
   .Creators_section h2 {
@@ -1356,6 +1390,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .creator_card {
     padding: 0;
+  }
+}
+
+@media (min-width: 993px) {
+  .img_trans_x {
+    transform: scale(1.3) translateX(50px);
+  }
+  .img_trans_x_opp {
+    transform: scale(1.1) translateX(-40px);
+  }
+  .Reminder_box_heading {
+    padding-top: 80px;
   }
 }
 

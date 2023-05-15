@@ -98,10 +98,12 @@ export default function Home() {
             <div className="text-center green_zone_heading">
               <h2>Are you in the green zone?</h2>
               <p>Find out now!</p>
+              <hr className="w_90 mx-auto mb-5" />
             </div>
-            <video width="100%" controls autoPlay muted loop>
+            {/* <video width="100%" controls autoPlay muted loop>
               <source src="/images/New Video Jeevone.mp4" type="video/mp4" />
-            </video>
+            </video> */}
+            <img src="./images/video.gif" alt="" className="w-100" />
           </div>
         </section>
 
@@ -150,27 +152,27 @@ export default function Home() {
                     />
                     <div className="tabs">
                       <label className="tab" id="one-tab" htmlFor="one">
-                        <img src="/images/img1.png" alt="" />
+                        <img src="/images/icons/img6.png" alt="" />
                         <p>Weight</p>
                       </label>
                       <label className="tab" id="two-tab" htmlFor="two">
-                        <img src="/images/img2.png" alt="" />
+                        <img src="/images/icons/img5.png" alt="" />
                         <p>Suger Level</p>
                       </label>
                       <label className="tab" id="three-tab" htmlFor="three">
-                        <img src="/images/img3.png" alt="" />
+                        <img src="/images/icons/img4.png" alt="" />
                         <p>BMI</p>
                       </label>
                       <label className="tab" id="four-tab" htmlFor="four">
-                        <img src="/images/img4.png" alt="" />
+                        <img src="/images/icons/img3.png" alt="" />
                         <p>BP</p>
                       </label>
                       <label className="tab" id="five-tab" htmlFor="five">
-                        <img src="/images/img5.png" alt="" />
+                        <img src="/images/icons/img2.png" alt="" />
                         <p>Water Intake</p>
                       </label>
                       <label className="tab" id="six-tab" htmlFor="six">
-                        <img src="/images/img6.png" alt="" />
+                        <img src="/images/icons/img1.png" alt="" />
                         <p>Medication</p>
                       </label>
                     </div>
@@ -180,29 +182,54 @@ export default function Home() {
                           <a href="#">
                             <FontAwesomeIcon icon={faHeart} />
                           </a>
-                          <span className="px-2">Track</span>
+                          <span className="px-2">Check Weight</span>
                         </div>
-                        <p>What matters to you</p>
+                        <p className="pl_30">What matters to you</p>
                       </div>
                       <div className="panel" id="two-panel">
-                        <div className="panel-title">Take-Away Skills</div>
-                        <p>What matters to you</p>
+                        <div className="panel-title">
+                          <a href="#">
+                            <FontAwesomeIcon icon={faHeart} />
+                          </a>
+                          <span className="px-2">Check Sugar Level</span>
+                        </div>
+                        <p className="pl_30">What matters to you</p>
                       </div>
                       <div className="panel" id="three-panel">
-                        <div className="panel-title">Note on Prerequisites</div>
-                        <p>What matters to you</p>
+                        <div className="panel-title">
+                          <a href="#">
+                            <FontAwesomeIcon icon={faHeart} />
+                          </a>
+                          <span className="px-2">Track</span>
+                        </div>
+                        <p className="pl_30">What matters to you</p>
                       </div>
                       <div className="panel" id="four-panel">
-                        <div className="panel-title">Why Learn CSS?</div>
-                        <p>What matters to you</p>
+                        <div className="panel-title">
+                          <a href="#">
+                            <FontAwesomeIcon icon={faHeart} />
+                          </a>
+                          <span className="px-2">Check BP</span>
+                        </div>
+                        <p className="pl_30">What matters to you</p>
                       </div>
                       <div className="panel" id="five-panel">
-                        <div className="panel-title">Take-Away Skills</div>
-                        <p>What matters to you</p>
+                        <div className="panel-title">
+                          <a href="#">
+                            <FontAwesomeIcon icon={faHeart} />
+                          </a>
+                          <span className="px-2">Check Water Intake</span>
+                        </div>
+                        <p className="pl_30">What matters to you</p>
                       </div>
                       <div className="panel" id="six-panel">
-                        <div className="panel-title">Note on Prerequisites</div>
-                        <p>What matters to you</p>
+                        <div className="panel-title">
+                          <a href="#">
+                            <FontAwesomeIcon icon={faHeart} />
+                          </a>
+                          <span className="px-2">Medication</span>
+                        </div>
+                        <p className="pl_30">What matters to you</p>
                       </div>
                     </div>
                   </div>
@@ -475,7 +502,11 @@ export default function Home() {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-12 col-md-6">
-                  <img src="/images/Vision 2.png" alt="" />
+                  <img
+                    src="/images/Vision 2.png"
+                    alt=""
+                    className="img_trans_x"
+                  />
                 </div>
                 <div className="col-12 col-md-6">
                   <h3>Vision</h3>
@@ -553,7 +584,11 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="col-12 col-md-7">
-                  <img src="/images/design.png" alt="" />
+                  <img
+                    src="/images/design.png"
+                    alt=""
+                    className="img_trans_x_opp"
+                  />
                 </div>
               </div>
             </div>
