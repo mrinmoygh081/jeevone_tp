@@ -102,10 +102,10 @@ export default function Home() {
               <p>Find out now!</p>
               <hr className="w_90 mx-auto mb-5" />
             </div>
-            {/* <video width="100%" controls autoPlay muted loop>
-              <source src="/images/New Video Jeevone.mp4" type="video/mp4" />
-            </video> */}
-            <img src="./images/video.gif" alt="" className="w-100" />
+            <video width="100%" autoPlay muted loop>
+              <source src="/images/video.mp4" type="video/mp4" />
+            </video>
+            {/* <img src="./images/video.gif" alt="" className="w-100" /> */}
           </div>
         </section>
 
