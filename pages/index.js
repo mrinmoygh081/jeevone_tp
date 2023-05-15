@@ -37,7 +37,7 @@ export default function Home() {
                 modifier: 1,
                 slideShadows: true,
               }}
-              modules={[EffectCoverflow]}
+              modules={[EffectCoverflow, Autoplay]}
               className="mySwiper"
             >
               {/* <div className="swiper-wrapper"> */}
