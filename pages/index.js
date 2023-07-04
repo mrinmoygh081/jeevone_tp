@@ -616,7 +616,27 @@ export default function Home() {
         <section className="Creators_section">
           <div className="container">
             <h2>CREATORS CORNER</h2>
-            <div className="row mb-4">
+            <div className="creator_cards">
+              <h3>Bridging the Road From Concept to Design</h3>
+              <div className="creator_card_img">
+                <img src="/images/creators/img1.png" alt="" />
+              </div>
+            </div>
+            <div className="creator_cards creator_cards2 pt-5">
+              <h3 className="pt-5">
+                Bridging the Road From Design to Development
+              </h3>
+              <div className="creator_card_img">
+                <img src="/images/creators/img2.png" alt="" />
+              </div>
+            </div>
+            <div className="creator_cards creator_cards3 pt-5">
+              <h3 className="pt-5">Connecting the Dots</h3>
+              <div className="creator_card_img">
+                <img src="/images/creators/img3.png" alt="" />
+              </div>
+            </div>
+            {/* <div className="row mb-4">
               <div className="col-12 col-md-6 mb-5 mb-lg-0">
                 <div className="creator_card">
                   <h3 className="img_heading">We visualized</h3>
@@ -648,7 +668,7 @@ export default function Home() {
                   <img src="/images/we-drive.png" alt="" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
