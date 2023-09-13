@@ -51,7 +51,7 @@ export default function Home() {
                 {/* <div>
                   <h2>Medical Records</h2>
                   <p>Simple, Smart & Seamless</p>
-                  <a href="#" target="_blank">
+                  <a href="#download_btns" target="_blank">
                     explore
                   </a>
                 </div> */}
@@ -97,12 +97,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="download_btns">
           <div className="icon_box">
             <h5>Download now</h5>
             <div className="store_logo">
-              <img src="./images/app-store.png" alt="" />
-              <img src="./images/play-store.png" alt="" />
+              <a href="#download_btns">
+                <img src="./images/app-store.png" alt="Jeevone Appstore" />
+              </a>
+              <a href="#">
+                <img src="./images/play-store.png" alt="Jeevone Playstore" />
+              </a>
             </div>
           </div>
         </section>
@@ -193,7 +197,7 @@ export default function Home() {
                     <div className="panels">
                       <div className="panel" id="one-panel">
                         <div className="panel-title">
-                          <a href="#">
+                          <a href="#download_btns">
                             <FontAwesomeIcon icon={faHeart} />
                           </a>
                           <span className="px-2">Check Weight</span>
@@ -202,7 +206,7 @@ export default function Home() {
                       </div>
                       <div className="panel" id="two-panel">
                         <div className="panel-title">
-                          <a href="#">
+                          <a href="#download_btns">
                             <FontAwesomeIcon icon={faHeart} />
                           </a>
                           <span className="px-2">Check Sugar Level</span>
@@ -211,7 +215,7 @@ export default function Home() {
                       </div>
                       <div className="panel" id="three-panel">
                         <div className="panel-title">
-                          <a href="#">
+                          <a href="#download_btns">
                             <FontAwesomeIcon icon={faHeart} />
                           </a>
                           <span className="px-2">Track</span>
@@ -220,7 +224,7 @@ export default function Home() {
                       </div>
                       <div className="panel" id="four-panel">
                         <div className="panel-title">
-                          <a href="#">
+                          <a href="#download_btns">
                             <FontAwesomeIcon icon={faHeart} />
                           </a>
                           <span className="px-2">Check BP</span>
@@ -229,7 +233,7 @@ export default function Home() {
                       </div>
                       <div className="panel" id="five-panel">
                         <div className="panel-title">
-                          <a href="#">
+                          <a href="#download_btns">
                             <FontAwesomeIcon icon={faHeart} />
                           </a>
                           <span className="px-2">Check Water Intake</span>
@@ -238,7 +242,7 @@ export default function Home() {
                       </div>
                       <div className="panel" id="six-panel">
                         <div className="panel-title">
-                          <a href="#">
+                          <a href="#download_btns">
                             <FontAwesomeIcon icon={faHeart} />
                           </a>
                           <span className="px-2">Medication</span>
@@ -248,7 +252,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="section_links_btn">
-                    <a href="#" className="tab_button">
+                    <a href="#download_btns" className="tab_button">
                       Know More
                     </a>
                   </div>
@@ -291,12 +295,14 @@ export default function Home() {
                       <div className="my_corner_card_2">
                         <img src="/images/myCorner-2.png" alt="" />
                         <div className="card_text2">
-                          <a href="#">Special Offer</a>
+                          <a href="#download_btns">Special Offer</a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <button className="tab_button mt-25">READ MORE</button>
+                  <a href="#download_btns" className="tab_button mt-25">
+                    READ MORE
+                  </a>
                 </div>
               </div>
             </div>
@@ -320,32 +326,40 @@ export default function Home() {
             <div className="container mt-5">
               <div className="row">
                 <div className="col-md-3 col-6 reminder">
-                  <div className="Reminder_box">
-                    <img src="/images/Appointments.png" alt="" />
-                  </div>
-                  <h6>Appointments</h6>
+                  <a href="#download_btns">
+                    <div className="Reminder_box">
+                      <img src="/images/Appointments.png" alt="" />
+                    </div>
+                    <h6>Appointments</h6>
+                  </a>
                 </div>
                 <div className="col-md-3 col-6 reminder">
-                  <div className="Reminder_box">
-                    <img src="/images/Re-order-Medicines.png" alt="" />
-                  </div>
-                  <h6>Re-order Medicines</h6>
+                  <a href="#download_btns">
+                    <div className="Reminder_box">
+                      <img src="/images/Re-order-Medicines.png" alt="" />
+                    </div>
+                    <h6>Re-order Medicines</h6>
+                  </a>
                 </div>
                 <div className="col-md-3 col-6 reminder">
-                  <div className="Reminder_box">
-                    <img
-                      src="/images/Vaccinations.png"
-                      alt=""
-                      style={{ transform: "translateX(6px)" }}
-                    />
-                  </div>
-                  <h6>Vaccinations</h6>
+                  <a href="#download_btns">
+                    <div className="Reminder_box">
+                      <img
+                        src="/images/Vaccinations.png"
+                        alt=""
+                        style={{ transform: "translateX(6px)" }}
+                      />
+                    </div>
+                    <h6>Vaccinations</h6>
+                  </a>
                 </div>
                 <div className="col-md-3 col-6 reminder">
-                  <div className="Reminder_box">
-                    <img src="/images/Renewals.png" alt="" />
-                  </div>
-                  <h6>Renewals</h6>
+                  <a href="#download_btns">
+                    <div className="Reminder_box">
+                      <img src="/images/Renewals.png" alt="" />
+                    </div>
+                    <h6>Renewals</h6>
+                  </a>
                 </div>
               </div>
             </div>
@@ -380,7 +394,9 @@ export default function Home() {
                     <img src="/images/doctor.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <button className="card_button">Book Now</button>
+                  <a href="#download_btns" className="card_button">
+                    Book Now
+                  </a>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 card1 position-relative">
@@ -394,7 +410,9 @@ export default function Home() {
                     <img src="/images/medicines.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <button className="card_button">Book Now</button>
+                  <a href="#download_btns" className="card_button">
+                    Book Now
+                  </a>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 card1 position-relative">
@@ -412,7 +430,9 @@ export default function Home() {
                     <img src="/images/tests.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <button className="card_button">Book Now</button>
+                  <a href="#download_btns" className="card_button">
+                    Book Now
+                  </a>
                 </div>
               </div>
             </div>
@@ -428,7 +448,9 @@ export default function Home() {
                     <img src="/images/home-care.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <button className="card_button">Book Now</button>
+                  <a href="#download_btns" className="card_button">
+                    Book Now
+                  </a>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 card1 position-relative">
@@ -442,7 +464,9 @@ export default function Home() {
                     <img src="/images/Medical-Equipment.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <button className="card_button">Book Now</button>
+                  <a href="#download_btns" className="card_button">
+                    Book Now
+                  </a>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 card1 position-relative">
@@ -456,7 +480,9 @@ export default function Home() {
                     <img src="/images/lifestyle.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <button className="card_button">Book Now</button>
+                  <a href="#download_btns" className="card_button">
+                    Book Now
+                  </a>
                 </div>
               </div>
             </div>
@@ -480,7 +506,9 @@ export default function Home() {
                   simple for you
                 </h2>
                 <p>Digitize your clinic today!</p>
-                <button className="about_button">Register now</button>
+                <a href="#download_btns" className="about_button">
+                  Register now
+                </a>
               </div>
               <div className="col-12 col-md-6">
                 <img src="/images/about.png" alt="" />
@@ -529,9 +557,8 @@ export default function Home() {
                 <div className="col-12 col-md-6">
                   <h3>Vision</h3>
                   <p className="firstparagrph">
-                    Simple can be sophisticated.This idea marked the beginning
-                    of an Our vision is to keep moving forward and keep evolving
-                    in pursuit of genuinely human-centric solutions using
+                    Our vision is to keep moving forward and keep evolving in
+                    pursuit of genuinely human-centric solutions using
                     cutting-edge innovation.We want to be synonymous with
                     new-age ingenuity that enhances the lives of people around
                     the world.
@@ -613,7 +640,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="Creators_section">
+        {/* <section className="Creators_section">
           <div className="container">
             <h2>CREATORS CORNER</h2>
             <div className="creator_cards">
@@ -636,41 +663,8 @@ export default function Home() {
                 <img src="/images/creators/img3.png" alt="" />
               </div>
             </div>
-            {/* <div className="row mb-4">
-              <div className="col-12 col-md-6 mb-5 mb-lg-0">
-                <div className="creator_card">
-                  <h3 className="img_heading">We visualized</h3>
-                  <img src="/images/we-visualized.png" alt="" />
-                </div>
-              </div>
-              <div className="col-12 col-md-6 mb-5 mb-lg-0">
-                <div className="creator_card">
-                  <h3 className="img_heading">We built</h3>
-                  <img src="/images/we-built.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12 d-flex justify-content-center">
-                <img src="/images/leaves.png" alt="" className="leaves_img" />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12 col-md-6 my-5 my-lg-0">
-                <div className="creator_card">
-                  <h3 className="img_heading">We connected...</h3>
-                  <img src="/images/we-connected.png" alt="" />
-                </div>
-              </div>
-              <div className="col-12 col-md-6 mb-5 mb-lg-0">
-                <div className="creator_card">
-                  <h3 className="img_heading">We drive</h3>
-                  <img src="/images/we-drive.png" alt="" />
-                </div>
-              </div>
-            </div> */}
           </div>
-        </section>
+        </section> */}
 
         <section className="testimonial">
           <div className="testimonial_heading">
@@ -695,7 +689,7 @@ export default function Home() {
                   by the readable content of a page when looking at its layout.
                 </p>
                 <div className="icon_shape icon_shape_res">
-                  <a href="#">
+                  <a href="#download_btns">
                     <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                 </div>
@@ -706,7 +700,7 @@ export default function Home() {
                   by the readable content of a page when looking at its layout.
                 </p>
                 <div className="icon_shape">
-                  <a href="#">
+                  <a href="#download_btns">
                     <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                 </div>
@@ -717,7 +711,7 @@ export default function Home() {
                   by the readable content of a page when looking at its layout.
                 </p>
                 <div className="icon_shape icon_shape_res">
-                  <a href="#">
+                  <a href="#download_btns">
                     <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                 </div>
