@@ -53,6 +53,15 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 button,
 input,
 optgroup,
@@ -567,6 +576,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .tab_button {
+  display: inline-block;
   background-color: #3a3cc6;
   border: none;
   color: white;
@@ -599,6 +609,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .reminder h6 {
   margin-top: 15px;
   font-weight: 600;
+  color: #09096d;
 }
 
 .reminder_section {
@@ -1233,14 +1244,18 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .icon_shape_footer {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 36px;
   border-radius: 50px;
   background-color: #c1c1c1;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.icon_shape_footer:hover {
+  background-color: #6365e3;
 }
 
 .footer_text {

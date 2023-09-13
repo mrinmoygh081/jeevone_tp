@@ -22,16 +22,32 @@ function Footer() {
                 <div className="about_list">
                   <h6>About Us</h6>
                   <ul>
-                    <li>Jeevone Story</li>
-                    <li>Creators Corner</li>
+                    <li>
+                      <a href="#download_btns">Jeevone Story</a>
+                    </li>
+                    <li>
+                      <a href="#download_btns">Terms of usage</a>
+                    </li>
+                    <li>
+                      <a href="#download_btns">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#download_btns">Refund Policy</a>
+                    </li>
                   </ul>
                 </div>
                 <div className="contact_list">
                   <h6>Contact Us</h6>
                   <ul>
-                    <li>Training (Coming Soon)</li>
-                    <li>Schedule a Demo</li>
-                    <li>Reach Us</li>
+                    <li>
+                      <a href="#download_btns">Training (Coming Soon)</a>
+                    </li>
+                    <li>
+                      <a href="#download_btns">Schedule a Demo</a>
+                    </li>
+                    <li>
+                      <a href="#download_btns">Reach Us</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -39,16 +55,24 @@ function Footer() {
                 <h6>Connect</h6>
                 <div className="icon_list">
                   <div className="icon_shape_footer">
-                    <FontAwesomeIcon icon={faFacebookF} />
+                    <a href="#download_btns">
+                      <FontAwesomeIcon icon={faFacebookF} />
+                    </a>
                   </div>
                   <div className="icon_shape_footer">
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <a href="#download_btns">
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </a>
                   </div>
                   <div className="icon_shape_footer">
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <a href="#download_btns">
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
                   </div>
                   <div className="icon_shape_footer">
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <a href="#download_btns">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -111,7 +135,7 @@ function Footer() {
 
                 <div className="from_submit">
                   <button className="form_btn">SUBMIT</button>
-                  <p>Add pop up for OTP (for developer)</p>
+                  {/* <p>Add pop up for OTP (for developer)</p> */}
                 </div>
               </div>
             </form>

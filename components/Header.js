@@ -47,15 +47,15 @@ function Header() {
           </button>
 
           <div className={"dropdown " + (showDropdown ? "show" : "")}>
-            <a href="#create">
+            <a href="#download_btns">
               <FontAwesomeIcon icon={faUserDoctor} />
               <span>Doctor Login</span>
             </a>
-            <a href="#draft">
+            <a href="#download_btns">
               <FontAwesomeIcon icon={faRightToBracket} />
               <span>User Login</span>
             </a>
-            <a href="#move">
+            <a href="#download_btns">
               <FontAwesomeIcon icon={faHandshake} />
               <span>Partners Login</span>
             </a>
