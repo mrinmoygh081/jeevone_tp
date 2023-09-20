@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,6 +9,50 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+  const [form, setForm] = useState({
+    myself: "",
+    name: "",
+    email: "",
+    phone: "",
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+
+  const submitHandler = async () => {
+    setIsLoading(true);
+    const { myself, name, email, phone } = form;
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+      myself,
+      name,
+      phone,
+      email,
+    });
+
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+
+    await fetch(
+      "https://jeevone-mail.onrender.com/api/v1/send/",
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => alert("Mail has been sent successfully"))
+      .catch((error) => alert("Something went wrong!"));
+
+    setIsLoading(false);
+  };
+
   return (
     <footer className="footer">
       <div className="container-fluid">
@@ -86,10 +130,11 @@ function Footer() {
                   <div className="form_width">
                     <label htmlFor="name">I am a </label>
                     <select
-                      name="cars"
-                      id="cars"
+                      name="myself"
+                      id="myself"
                       className="form_ctr"
                       style={{ paddingTop: "8px" }}
+                      onChange={handleChange}
                     >
                       <option value="Partner" defaultValue={true}>
                         Partner
@@ -106,35 +151,47 @@ function Footer() {
                       name="name"
                       className="form_ctr"
                       placeholder="Enter Name"
+                      value={form?.name}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
 
                 <div className="from_row">
                   <div className="form_width">
-                    <label htmlFor="name">Phone </label>
+                    <label htmlFor="phone">Phone </label>
                     <input
                       type="text"
-                      id="name"
-                      name="name"
+                      id="phone"
+                      name="phone"
                       className="form_ctr"
                       placeholder="Enter Phone Number"
+                      value={form?.phone}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="form_width">
-                    <label htmlFor="name">Email </label>
+                    <label htmlFor="email">Email </label>
                     <input
                       type="text"
-                      id="name"
-                      name="name"
+                      id="email"
+                      name="email"
                       className="form_ctr"
                       placeholder="Enter Email ID"
+                      value={form?.email}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
 
                 <div className="from_submit">
-                  <button className="form_btn">SUBMIT</button>
+                  <button
+                    type="button"
+                    className="form_btn"
+                    onClick={submitHandler}
+                  >
+                    {isLoading ? "Loading..." : "SUBMIT"}
+                  </button>
                   {/* <p>Add pop up for OTP (for developer)</p> */}
                 </div>
               </div>
