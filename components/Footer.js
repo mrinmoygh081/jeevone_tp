@@ -47,7 +47,15 @@ function Footer() {
       requestOptions
     )
       .then((response) => response.text())
-      .then((result) => alert("Mail has been sent successfully"))
+      .then((result) => {
+        alert("Mail has been sent successfully");
+        setForm({
+          myself: "",
+          name: "",
+          email: "",
+          phone: "",
+        });
+      })
       .catch((error) => alert("Something went wrong!"));
 
     setIsLoading(false);
@@ -139,7 +147,7 @@ function Footer() {
                       <option value="Partner" defaultValue={true}>
                         Partner
                       </option>
-                      <option value="Patient">Patient</option>
+                      <option value="Consumer">Consumer</option>
                       <option value="Doctor">Doctor</option>
                     </select>
                   </div>
