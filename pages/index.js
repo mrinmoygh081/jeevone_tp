@@ -8,8 +8,11 @@ import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
+import PopUp from "@/components/PopUp";
+import { useState } from "react";
 
 export default function Home() {
+  const [isPopUp, setIsPopUp] = useState(false);
   return (
     <>
       <Header />
@@ -720,8 +723,8 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      <Footer />
+      <PopUp isPopUp={isPopUp} setIsPopUp={setIsPopUp} />
+      <Footer setIsPopUp={setIsPopUp} />
     </>
   );
 }

@@ -8,9 +8,9 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-function Footer() {
+function Footer({ setIsPopUp }) {
   const [form, setForm] = useState({
-    myself: "",
+    myself: "Partner",
     name: "",
     email: "",
     phone: "",
@@ -50,7 +50,7 @@ function Footer() {
       .then((result) => {
         alert("Mail has been sent successfully");
         setForm({
-          myself: "",
+          myself: "Partner",
           name: "",
           email: "",
           phone: "",
@@ -95,10 +95,12 @@ function Footer() {
                       <a href="#download_btns">Training (Coming Soon)</a>
                     </li>
                     <li>
-                      <a href="#download_btns">Schedule a Demo</a>
+                      <span onClick={() => setIsPopUp(true)}>
+                        Schedule a Demo
+                      </span>
                     </li>
                     <li>
-                      <a href="#download_btns">Reach Us</a>
+                      <span onClick={() => setIsPopUp(true)}>Reach Us</span>
                     </li>
                   </ul>
                 </div>
