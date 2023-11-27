@@ -8,6 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -30,7 +31,9 @@ function Header() {
     <header>
       <nav className="container navbar">
         <div>
-          <img src="./images/logo.png" alt="" className="logo" />
+          <Link href={"/"}>
+            <img src="./images/logo.png" alt="" className="logo" />
+          </Link>
         </div>
 
         <div className="dropdown_button">

@@ -7,6 +7,7 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 function Footer({ setIsPopUp }) {
   const [form, setForm] = useState({
@@ -78,10 +79,10 @@ function Footer({ setIsPopUp }) {
                       <a href="#download_btns">Jeevone Story</a>
                     </li>
                     <li>
-                      <a href="#download_btns">Terms of usage</a>
+                      <a href="/terms">Terms of usage</a>
                     </li>
                     <li>
-                      <a href="#download_btns">Privacy Policy</a>
+                      <Link href="/privacy">Privacy Policy</Link>
                     </li>
                     <li>
                       <a href="#download_btns">Refund Policy</a>
