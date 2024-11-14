@@ -3,7 +3,7 @@ import { IoMdCloseCircleOutline } from "react-icons/io";
 
 const PopUp = ({ isPopUp, setIsPopUp }) => {
   const [form, setForm] = useState({
-    myself: "",
+    myself: "DOCTOR",
     name: "",
     email: "",
     phone: "",
@@ -35,13 +35,10 @@ const PopUp = ({ isPopUp, setIsPopUp }) => {
       redirect: "follow",
     };
 
-    await fetch(
-      "https://jeevone-mail.onrender.com/api/v1/send/",
-      requestOptions
-    )
+    await fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/send`, requestOptions)
       .then((response) => response.text())
       .then((result) => {
-        alert("Mail has been sent successfully");
+        alert(result?.message);
         setForm({
           myself: "",
           name: "",

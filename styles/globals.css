@@ -1,0 +1,5 @@
+@media (max-width: 565px) {
+    .rev_mob {
+        flex-direction: column-reverse;
+    }
+}
