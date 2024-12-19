@@ -116,7 +116,10 @@ function Footer({ setIsPopUp }) {
                     </a>
                   </div>
                   <div className="icon_shape_footer">
-                    <a href="https://www.instagram.com/jeevone_care/">
+                    <a
+                      href="https://www.instagram.com/jeevone_care/"
+                      target="_blank"
+                    >
                       <FontAwesomeIcon icon={faInstagram} />
                     </a>
                   </div>

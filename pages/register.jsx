@@ -10,12 +10,18 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
 import PopUp from "@/components/PopUp";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [isPopUp, setIsPopUp] = useState(false);
   return (
     <>
       <section className="my-5">
+        <div className="d-flex justify-content-center mb-5 mb-md-0">
+          <Link href={"/"}>
+            <img src="./images/logo.png" alt="" className="logo" />
+          </Link>
+        </div>
         <div
           className="container about_heading"
           style={{ justifyContent: "center" }}

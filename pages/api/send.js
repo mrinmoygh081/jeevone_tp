@@ -1,5 +1,5 @@
 import { query } from "@/db/db";
-import { MAIL_TEMPLATE } from "@/utils/mail-templates";
+import MAIL_TEMPLATE from "@/utils/mail-templates";
 import SENDMAIL from "@/utils/mailSend";
 import { sendRes } from "@/utils/resHelper";
 
@@ -13,7 +13,7 @@ const handler = async (req, res) => {
         values: [myself, name, phone, email],
       });
       if (result) {
-        return sendRes(
+        sendRes(
           res,
           true,
           200,
@@ -29,13 +29,13 @@ const handler = async (req, res) => {
           subject: `Enquiry from ${name} to Jeevone`,
           html: MAIL_TEMPLATE(req.body),
         };
-        // SENDMAIL(mailDetails, function (err, data) {
-        //   if (!err) {
-        //     console.log("Error Occurs", err);
-        //   } else {
-        //     console.log("Email sent successfully");
-        //   }
-        // });
+        SENDMAIL(mailDetails, function (err, data) {
+          if (!err) {
+            console.log("Error Occurs", err);
+          } else {
+            console.log("Email sent successfully");
+          }
+        });
       } else {
         sendRes(res, false, 200, "No Record Found", result, null);
       }
