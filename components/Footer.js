@@ -199,7 +199,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p>Copyright © 2023 Jeevone</p>
+      <p>Copyright © 2024 Jeevone</p>
     </footer>
   );
 }

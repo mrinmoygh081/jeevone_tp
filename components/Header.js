@@ -34,7 +34,7 @@ function Header() {
         </div>
 
         <div className="dropdown_button">
-          <button
+          {/* <button
             onClick={() => setShowDropdown((b) => !b)}
             className="btn"
             ref={dropdown}
@@ -44,7 +44,7 @@ function Header() {
               icon={faChevronDown}
               className={showDropdown ? "arrow" : ""}
             />
-          </button>
+          </button> */}
 
           <div className={"dropdown " + (showDropdown ? "show" : "")}>
             <a href="#download_btns">

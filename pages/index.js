@@ -97,7 +97,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="download_btns">
+        <section id="download_btns" className="float">
           <div className="icon_box">
             <h5>Download now</h5>
             <div className="store_logo">
