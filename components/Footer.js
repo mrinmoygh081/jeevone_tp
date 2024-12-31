@@ -7,10 +7,11 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
-function Footer() {
+function Footer({ setIsPopUp }) {
   const [form, setForm] = useState({
-    myself: "",
+    myself: "Partner",
     name: "",
     email: "",
     phone: "",
@@ -42,15 +43,21 @@ function Footer() {
       redirect: "follow",
     };
 
-    await fetch(
-      "https://jeevone-mail.onrender.com/api/v1/send/",
-      requestOptions
-    )
-      .then((response) => response.text())
-      .then((result) => alert("Mail has been sent successfully"))
-      .catch((error) => alert("Something went wrong!"));
-
-    setIsLoading(false);
+    await fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/send`, requestOptions)
+      .then((response) => response.json())
+      .then((result) => {
+        alert(result?.message);
+        setForm({
+          myself: "Doctor",
+          name: "",
+          email: "",
+          phone: "",
+        });
+      })
+      .catch((error) => alert("Something went wrong!"))
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -62,7 +69,7 @@ function Footer() {
               <div className="footer_logo">
                 <img src="./images/footer_logo.png" alt="" />
               </div>
-              <div className="footer_list">
+              {/* <div className="footer_list">
                 <div className="about_list">
                   <h6>About Us</h6>
                   <ul>
@@ -70,10 +77,10 @@ function Footer() {
                       <a href="#download_btns">Jeevone Story</a>
                     </li>
                     <li>
-                      <a href="#download_btns">Terms of usage</a>
+                      <a href="/terms">Terms of usage</a>
                     </li>
                     <li>
-                      <a href="#download_btns">Privacy Policy</a>
+                      <Link href="/privacy">Privacy Policy</Link>
                     </li>
                     <li>
                       <a href="#download_btns">Refund Policy</a>
@@ -87,35 +94,33 @@ function Footer() {
                       <a href="#download_btns">Training (Coming Soon)</a>
                     </li>
                     <li>
-                      <a href="#download_btns">Schedule a Demo</a>
+                      <span onClick={() => setIsPopUp(true)}>
+                        Schedule a Demo
+                      </span>
                     </li>
                     <li>
-                      <a href="#download_btns">Reach Us</a>
+                      <span onClick={() => setIsPopUp(true)}>Reach Us</span>
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               <div className="footer_icon_list">
                 <h6>Connect</h6>
                 <div className="icon_list">
                   <div className="icon_shape_footer">
-                    <a href="#download_btns">
+                    <a
+                      href="https://www.facebook.com/people/Jeevone-Care/100095415790862/"
+                      target="_blank"
+                    >
                       <FontAwesomeIcon icon={faFacebookF} />
                     </a>
                   </div>
                   <div className="icon_shape_footer">
-                    <a href="#download_btns">
+                    <a
+                      href="https://www.instagram.com/jeevone_care/"
+                      target="_blank"
+                    >
                       <FontAwesomeIcon icon={faInstagram} />
-                    </a>
-                  </div>
-                  <div className="icon_shape_footer">
-                    <a href="#download_btns">
-                      <FontAwesomeIcon icon={faTwitter} />
-                    </a>
-                  </div>
-                  <div className="icon_shape_footer">
-                    <a href="#download_btns">
-                      <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                   </div>
                 </div>
@@ -123,7 +128,7 @@ function Footer() {
             </div>
           </div>
           <div className="col-12 col-md-6">
-            <form className="form_box">
+            <form className="form_box" id="registerform">
               <div style={{ width: "100%" }}>
                 <h4>Reach Us</h4>
                 <div className="from_row">
@@ -136,11 +141,11 @@ function Footer() {
                       style={{ paddingTop: "8px" }}
                       onChange={handleChange}
                     >
-                      <option value="Partner" defaultValue={true}>
-                        Partner
+                      <option value="Doctor" defaultValue={true}>
+                        Doctor
                       </option>
-                      <option value="Patient">Patient</option>
-                      <option value="Doctor">Doctor</option>
+                      <option value="Partner">Partner</option>
+                      <option value="Consumer">Consumer</option>
                     </select>
                   </div>
                   <div className="form_width">

@@ -1218,6 +1218,15 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 34px;
   color: #00a6ff;
 }
+.contact_list a,
+.contact_list span {
+  color: inherit;
+  cursor: pointer;
+}
+.contact_list a:hover,
+.contact_list span:hover {
+  color: #fff;
+}
 
 .form_width {
   width: 47%;
@@ -1243,6 +1252,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .footer_icon_list {
   color: white;
+  margin-left: 20px;
 }
 
 .footer_icon_list h6 {
@@ -1299,6 +1309,31 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .creator_cards3 {
   max-width: 500px;
+}
+
+.form_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 99;
+}
+.form_popup .form_box {
+  margin: 0;
+  height: auto;
+  max-width: 500px;
+  background-color: #09096d;
+  width: 500px;
+  position: relative;
+}
+.form_popup .close {
+  position: absolute;
+  top: 6px;
+  right: 13px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Responsive style start */
@@ -1502,4 +1537,13 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .form_popup .form_box {
+    width: 95vw;
+  }
+}
+.policies h2 {
+  font-size: 24px;
+}
+.policies h3 {
+  font-size: 20px;
 }

@@ -1,0 +1,51 @@
+import { query } from "@/db/db";
+import MAIL_TEMPLATE from "@/utils/mail-templates";
+import SENDMAIL from "@/utils/mailSend";
+import { sendRes } from "@/utils/resHelper";
+
+const handler = async (req, res) => {
+  if (req.method === "POST") {
+    const { myself, name, phone, email } = req.body;
+
+    try {
+      const result = await query({
+        query: `INSERT INTO doctors (type, name, phone, email) VALUES ($1, $2, $3, $4) RETURNING *`,
+        values: [myself, name, phone, email],
+      });
+      if (result) {
+        sendRes(
+          res,
+          true,
+          200,
+          "Thank you for submitting your application! We will revert after having a look at your application.",
+          result,
+          null
+        );
+
+        // Trigger a mail
+        let mailDetails = {
+          from: process.env.SENDER_MAIL,
+          to: process.env.RECEIVER_CAREER_MAIL,
+          subject: `Enquiry from ${name} to Jeevone`,
+          html: MAIL_TEMPLATE(req.body),
+        };
+        SENDMAIL(mailDetails, function (err, data) {
+          if (!err) {
+            console.log("Error Occurs", err);
+          } else {
+            console.log("Email sent successfully");
+          }
+        });
+      } else {
+        sendRes(res, false, 200, "No Record Found", result, null);
+      }
+    } catch (error) {
+      console.log(error);
+      sendRes(res, false, 400, "Error", error, null);
+    }
+  } else {
+    res.status(405).json({ message: "Method not allowed" });
+  }
+};
+
+export default handler;
