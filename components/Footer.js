@@ -69,7 +69,7 @@ function Footer({ setIsPopUp }) {
               <div className="footer_logo">
                 <img src="./images/footer_logo.png" alt="" />
               </div>
-              {/* <div className="footer_list">
+              <div className="footer_list">
                 <div className="about_list">
                   <h6>About Us</h6>
                   <ul>
@@ -103,7 +103,7 @@ function Footer({ setIsPopUp }) {
                     </li>
                   </ul>
                 </div>
-              </div> */}
+              </div>
               <div className="footer_icon_list">
                 <h6>Connect</h6>
                 <div className="icon_list">
