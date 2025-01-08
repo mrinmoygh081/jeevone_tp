@@ -142,7 +142,7 @@ const Privacy = () => {
           </p>
           <h2>3. PRIVACY STATEMENTS</h2>
           <h3>3.1 ALL USERS NOTE: </h3>
-          <p>ALL USERS NOTE: </p>
+          <p>This section applies to all Users. </p>
           <ol type="i">
             <li>
               Accordingly, a condition of each User’s use of and access to the

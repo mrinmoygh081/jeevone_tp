@@ -104,10 +104,16 @@ export default function Home() {
           <div className="icon_box">
             <h5>Download now</h5>
             <div className="store_logo">
-              <a href="#download_btns">
+              <a
+                href="https://apps.apple.com/in/app/jeevone/id6471591844"
+                target="_blank"
+              >
                 <img src="./images/app-store.png" alt="Jeevone Appstore" />
               </a>
-              <a href="#">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.jeevone.consumerapp&pcampaignid=web_share"
+                target="_blank"
+              >
                 <img src="./images/play-store.png" alt="Jeevone Playstore" />
               </a>
             </div>
@@ -121,7 +127,7 @@ export default function Home() {
               <p>Find out now!</p>
               <hr className="w_90 mx-auto mb-5" />
             </div>
-            <video width="100%" autoPlay muted loop>
+            <video width="100%" autoPlay playsInline muted loop>
               <source src="/images/video.mp4" type="video/mp4" />
             </video>
             {/* <img src="./images/video.gif" alt="" className="w-100" /> */}
@@ -394,7 +400,11 @@ export default function Home() {
 
                 <div className="position-relative">
                   <div className="position-relative">
-                    <img src="/images/doctor.png" alt="" />
+                    <img
+                      src="/images/doctor.png"
+                      alt=""
+                      className="w-100 rounded"
+                    />
                     <div className="overlay"></div>
                   </div>
                   <a href="#download_btns" className="card_button">

@@ -16,19 +16,19 @@ const Terms = () => {
             TERMS & CONDITIONS: JEEVONE TERMS OF USE
           </h1>
           <p>
-            Jeevone Care And Tech Services Private Limited (“Jeevone”) is the
-            author and publisher of the internet resource www.jeevone.com;
-            www.jeevone.in; www.jeevone.org; www.jeevone.care;
-            www.jeevone.health; www.jeevone.net; www.jeevone.co.in, the mobile
-            application ‘JEEVONE’ and the Jeevone Care And Tech Services Private
-            Limited. Chatbot (any component of the services offered which
-            automatically interacts and provides health information and wellness
-            recommendations) (includes www.jeevone.com; www.jeevone.in;
+            TERMS & CONDITIONS: JEEVONE TERMS OF USE Jeevone Care And Tech
+            Services Private Limited (“Jeevone”) is the author and publisher of
+            the internet resource www.jeevone.com; www.jeevone.in;
             www.jeevone.org; www.jeevone.care; www.jeevone.health;
-            www.jeevone.net; www.jeevone.co.in and any other partner domains)
-            are hereafter, jointly referred to as “Website/ App”. JEEVONE owns
-            and operates the services provided through the Website/ App, mobile
-            applications and the chatbot.
+            www.jeevone.net; www.jeevone.co.in, the mobile application ‘JEEVONE’
+            and the Jeevone Care And Tech Services Private Limited. Chatbot (any
+            component of the services offered which automatically interacts and
+            provides health information and wellness recommendations) (includes
+            www.jeevone.com; www.jeevone.in; www.jeevone.org; www.jeevone.care;
+            www.jeevone.health; www.jeevone.net; www.jeevone.co.in and any other
+            partner domains) are hereafter, jointly referred to as “Website/
+            App”. JEEVONE owns and operates the services provided through the
+            Website/ App, mobile applications and the chatbot.
           </p>
           <h2>1. NATURE AND APPLICABILITY OF TERMS</h2>
           <p>
@@ -112,21 +112,6 @@ const Terms = () => {
             abide by them. This Agreement supersedes all previous oral and
             written terms and conditions (if any) communicated to you. By
             availing any Service, you signify your agreement to this Agreement.
-          </p>
-          <p>
-            We reserve the right to modify or terminate any portion of the
-            Agreement for any reason and at any time, and such modifications
-            shall be informed to you in writing. You should read the Agreement
-            at regular intervals. Your use of the Website/ App following any
-            such modification constitutes your agreement to follow and be bound
-            by the Agreement so modified. Any additional terms and conditions,
-            disclaimers, privacy policies and other policies applicable in
-            general and/ or to specific areas of this Website/ App or to
-            particular Service are also considered as part of the Agreement. You
-            acknowledge that you will be bound by this Agreement for availing
-            any of the Services offered by JEEVONE. If you do not agree with any
-            part of the Agreement, please do not use the Website/ App or avail
-            any Services.
           </p>
           <p>
             We reserve the right to modify or terminate any portion of the
@@ -364,35 +349,23 @@ const Terms = () => {
                 feedback that has adversely affected JEEVONE or its Users.
               </li>
             </ul>
-            <li>
-              3.3 If JEEVONE determines that you have provided fraudulent,
-              inaccurate, or incomplete information, including through feedback,
-              JEEVONE reserves the right to immediately suspend your access to
-              the Website/ App or any of your accounts with JEEVONE and makes
-              such declaration on the Website/ App alongside your name/your
-              clinic’s name as determined by JEEVONE for the protection of its
-              business and in the interests of Users. You shall be liable to
-              indemnify JEEVONE and all sponsoring/promoting
-              organisations/bodies, for any losses incurred as a result of your
-              misrepresentations or fraudulent feedback that has adversely
-              affected JEEVONE or its Users.
-            </li>
+            <li>3.3 APPOINTMENT BOOKING AND INTERACTION WITH PRACTITIONERS,</li>
             <ul type="none">
               <li>
-                While JEEVONE will try to ensure a confirmed on-time appointment
-                for a End-User who requested an appointment on Website/ App,
-                JEEVONE does not guarantee that a User will get a confirmed
-                appointment. Further, JEEVONE and the Practitioner/
+                3.3.1 While JEEVONE will try to ensure a confirmed on-time
+                appointment for a End-User who requested an appointment on
+                Website/ App, JEEVONE does not guarantee that a User will get a
+                confirmed appointment. Further, JEEVONE and the Practitioner/
                 sponsoring/promoting organisation/body, has no liability if such
                 appointment is confirmed but later cancelled by Practitioners,
                 for the given appointment time over text, video, audio or
                 in-person.
               </li>
               <li>
-                You understand and agree that any interactions and associated
-                issues with other Users including but not limited to your health
-                issues and your experiences is strictly between you and the
-                other Users. You shall not hold JEEVONE or or your
+                3.3.2 You understand and agree that any interactions and
+                associated issues with other Users including but not limited to
+                your health issues and your experiences is strictly between you
+                and the other Users. You shall not hold JEEVONE or or your
                 sponsoring/promoting organisation/body, responsible for any such
                 interactions and associated issues. For avoidance of doubt,
                 JEEVONE is not involved in providing any healthcare or medical
@@ -415,14 +388,14 @@ const Terms = () => {
                 use of chatbot.
               </li>
               <li>
-                Without prejudice to the generality of the above, JEEVONE and
-                your sponsoring/promoting organisation/body, will not be liable
-                for:
+                3.3.3 Without prejudice to the generality of the above, JEEVONE
+                and your sponsoring/promoting organisation/body, will not be
+                liable for:
                 <ol type="i">
                   <li>
-                    Without prejudice to the generality of the above, JEEVONE
-                    and your sponsoring/promoting organisation/body, will not be
-                    liable for:
+                    any wrong medication or treatment quality being given by the
+                    Practitioner(s), or any medical negligence on part of the
+                    Practitioner(s);
                   </li>
                   <li>
                     any type of inconvenience suffered by the User due to a
@@ -453,7 +426,7 @@ const Terms = () => {
                 feedback, such as suggestions for delisting of a particular
                 Practitioner from the Website/ App.
               </li>
-              <li>
+              {/* <li>
                 In the event that, the Practitioner with whom User has booked a
                 paid appointment via the Website/ mobile app, has not been able
                 to meet the User, User will need to write to us at
@@ -491,7 +464,7 @@ const Terms = () => {
                     will not get any refund.
                   </li>
                 </ol>
-              </li>
+              </li> */}
             </ul>
             <li>3.4 NO DOCTOR PATIENT RELATIONSHIP FOR EMERGENCY USE.</li>
             <ol>
@@ -562,6 +535,12 @@ const Terms = () => {
               </li>
             </ol>
             <li>3.6 REVIEWS, FEEDBACK & SERVICES.</li>
+            <li>
+              By using this Website/ App, you agree that any relevant
+              information shared by you with JEEVONE, your sponsoring/promoting
+              organisation/body, or with any Practitioner will be subject to our
+              Privacy Policy.
+            </li>
             <ol>
               <li>
                 You are solely responsible for the content that you choose to
@@ -623,7 +602,63 @@ const Terms = () => {
               </li>
             </ol>
           </ul>
-          <h2>4. TERMS OF USE FOR PRACTITIONERS</h2>
+          <h2>4. Refund Policy</h2>
+          <ol>
+            <li>
+              In the event that, the Practitioner with whom User has booked a
+              paid appointment via the Website/ mobile app, has not been able to
+              meet the User, User will need to write to us at refund@jeevone.com
+              within five (5) days from the occurrence of such event; in which
+              case, the entire consultation amount as mentioned on the Website
+              will be refunded to the User within the next five (5) to six (6)
+              business days in the original mode of payment done by the User
+              while booking. In case where the User, does not show up for the
+              appointment booked with a Practitioner, without cancelling the
+              appointment beforehand, the amount will not be refunded.However,
+              where cancellation charges have been levied (as charged by the
+              Practitioner/Practice), you would not be entitled to complete
+              refund even if you have cancelled beforehand.
+            </li>
+            <li>
+              Users will not be entitled for any refunds in cases where, the
+              Practitioner is unable to meet the User at the exact time of the
+              scheduled appointment time and the User is required to wait,
+              irrespective of the fact whether the User is required to wait or
+              choose to not obtain the medical services from the said
+              Practitioner.
+            </li>
+            <li>
+              Appointment cancellation can be done any time before the
+              appointment time.
+            </li>
+            <li>
+              On cancellation, 100% of the amount will be refunded via the same
+              payment mode if the cancellation is done 2 hours prior to your
+              appointment time.
+            </li>
+            <li>
+              On cancellation within two hours of the appointment, you will not
+              get any refund.
+            </li>
+          </ol>
+          {/* <ul>
+            <li>
+              In the event that, the Practitioner with whom User has booked a
+              paid appointment via the Website/ mobile app, has not been able to
+              meet the User, User will need to write to us at refund@jeevone.com
+              within five (5) days from the occurrence of such event; in which
+              case, the entire consultation amount as mentioned on the Website
+              will be refunded to the User within the next five (5) to six (6)
+              business days in the original mode of payment done by the User
+              while booking. In case where the User, does not show up for the
+              appointment booked with a Practitioner, without cancelling the
+              appointment beforehand, the amount will not be refunded.However,
+              where cancellation charges have been levied (as charged by the
+              Practitioner/Practice), you would not be entitled to complete
+              refund even if you have cancelled beforehand.
+            </li>
+          </ul> */}
+          <h2>5. TERMS OF USE FOR PRACTITIONERS</h2>
           <p>
             The terms of use for Practitioners are defined under the
             Practitioners’ terms of use (www.jeevone.com; www.jeevone.in;
@@ -633,7 +668,7 @@ const Terms = () => {
             of any clash/discrepancy/conflict, the Practitioner is bound to the
             terms defined under the Practitioner’s terms of use.
           </p>
-          <h2>5. JEEVONE SPONSOR RIGHTS</h2>
+          <h2>6. JEEVONE SPONSOR RIGHTS</h2>
           <ol>
             <li>
               JEEVONE reserves the rights to display sponsored ads on the
@@ -653,7 +688,7 @@ const Terms = () => {
               organisation/body accept no liability for the same.
             </li>
           </ol>
-          <h2>6. RIGHTS AND OBLIGATIONS RELATING TO CONTENT</h2>
+          <h2>7. RIGHTS AND OBLIGATIONS RELATING TO CONTENT</h2>
           <ol>
             <li>
               As mandated by Regulation 3(2) of the IG Rules, JEEVONE hereby
@@ -765,7 +800,7 @@ const Terms = () => {
               governmental authority.
             </li>
           </ol>
-          <h2>7. TERMINATION</h2>
+          <h2>8. TERMINATION</h2>
           <ol>
             <li>
               JEEVONE reserves the right to suspend or terminate a User’s access
@@ -810,7 +845,7 @@ const Terms = () => {
               record keeping process and practices.
             </li>
           </ol>
-          <h2>8. LIMITATION OF LIABILITY</h2>
+          <h2>9. LIMITATION OF LIABILITY</h2>
           <ol>
             <li>
               In no event, including but not limited to negligence, shall
@@ -854,7 +889,7 @@ const Terms = () => {
               Rs. 1000/- (Rupees One Thousand Only).
             </li>
           </ol>
-          <h2>9. INDEMNITY</h2>
+          <h2>10. INDEMNITY</h2>
           <p>
             User agrees to indemnify and hold harmless its sponsoring/promoting
             organisation/body and JEEVONE, its affiliates, officers, directors,
@@ -869,7 +904,7 @@ const Terms = () => {
             you agree to provide us with reasonable assistance, at your expense,
             in defending any such claim, loss, liability, damage, or cost.
           </p>
-          <h2>10. APPLICABLE LAW AND DISPUTE SETTLEMENT</h2>
+          <h2>11. APPLICABLE LAW AND DISPUTE SETTLEMENT</h2>
           <ol>
             <li>
               You agree that this Agreement and any contractual obligation
@@ -895,7 +930,7 @@ const Terms = () => {
               App or the Services or the information to which it gives access.
             </li>
           </ol>
-          <h2>11. CONTACT INFORMATION</h2>
+          <h2>12. CONTACT INFORMATION</h2>
           <ol>
             <li>
               If a User has any questions concerning JEEVONE, the Website/ App,
@@ -909,17 +944,16 @@ const Terms = () => {
               the Website/ App or the service, including any discrepancies and
               grievances with respect to processing of information, you can
               contact:
-              <p>Name: </p>
-              <p>Designation: </p>
-              <p>Address: </p>
-              <p>Email: </p>
-              <p>Telephone: </p>
+              <p>
+                Name: <br /> Designation: <br />
+                Address: <br /> Email: <br /> Telephone:{" "}
+              </p>
               In the event you suffer as a result of access or usage of our
               Website/ App by any person in violation of Rule 3 of the IG Rules,
               please address your grievance to the above person.
             </li>
           </ol>
-          <h2>12. SEVERABILITY</h2>
+          <h2>13. SEVERABILITY</h2>
           <p>
             If any provision of the Agreement is held by a court of competent
             jurisdiction or arbitral tribunal to be unenforceable under
