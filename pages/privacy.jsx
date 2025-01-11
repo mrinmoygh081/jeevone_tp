@@ -1,9 +1,15 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import PopUp from "@/components/PopUp";
 import Head from "next/head";
 import React from "react";
 
 const Privacy = () => {
+  const [isPopUp, setIsPopUp] = useState({
+    val: false,
+    name: "",
+  });
+
   return (
     <>
       <Head>
@@ -716,7 +722,9 @@ const Privacy = () => {
           </p>
         </div>
       </div>
-      <Footer />
+
+      <PopUp isPopUp={isPopUp} setIsPopUp={setIsPopUp} />
+      <Footer setIsPopUp={setIsPopUp} />
     </>
   );
 };

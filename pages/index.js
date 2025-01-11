@@ -12,7 +12,10 @@ import PopUp from "@/components/PopUp";
 import { useState } from "react";
 
 export default function Home() {
-  const [isPopUp, setIsPopUp] = useState(false);
+  const [isPopUp, setIsPopUp] = useState({
+    val: false,
+    name: "",
+  });
   return (
     <>
       <Header />
@@ -43,22 +46,12 @@ export default function Home() {
               modules={[EffectCoverflow, Autoplay]}
               className="mySwiper"
             >
-              {/* <div className="swiper-wrapper"> */}
               <SwiperSlide className="swiper-slide">
-                {/* <div className="swiper-slide swiper-slide--one position-relative"> */}
                 <img
                   src="/images/hero_slider/img1.png"
                   alt=""
                   className="banner_img"
                 />
-                {/* <div>
-                  <h2>Medical Records</h2>
-                  <p>Simple, Smart & Seamless</p>
-                  <a href="#download_btns" target="_blank">
-                    explore
-                  </a>
-                </div> */}
-                {/* </div> */}
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <img
@@ -96,7 +89,6 @@ export default function Home() {
                 />
               </SwiperSlide>
             </Swiper>
-            {/* </div> */}
           </div>
         </section>
 
@@ -519,9 +511,17 @@ export default function Home() {
                   simple for you
                 </h2>
                 <p>Digitize your clinic today!</p>
-                <a href="#download_btns" className="about_button">
+                <button
+                  onClick={() =>
+                    setIsPopUp({
+                      val: true,
+                      name: "Register",
+                    })
+                  }
+                  className="about_button"
+                >
                   Register now
-                </a>
+                </button>
               </div>
               <div className="col-12 col-md-6">
                 <img src="/images/about.png" alt="" />

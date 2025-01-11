@@ -13,7 +13,10 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function Home() {
-  const [isPopUp, setIsPopUp] = useState(false);
+  const [isPopUp, setIsPopUp] = useState({
+    val: false,
+    name: "",
+  });
   return (
     <>
       <section className="my-5">
@@ -41,12 +44,20 @@ export default function Home() {
                 simple for you
               </h2>
               <p>Digitize your clinic today!</p>
-              {/* <button onClick={() => setIsPopUp(true)} className="about_button">
+              <button
+                onClick={() =>
+                  setIsPopUp({
+                    val: true,
+                    name: "Register",
+                  })
+                }
+                className="about_button"
+              >
                 Register now
-              </button> */}
-              <a href="#registerform" className="about_button">
+              </button>
+              {/* <a href="#registerform" className="about_button">
                 Register now
-              </a>
+              </a> */}
             </div>
             <div className="col-12 col-md-6">
               <img src="/images/about.png" alt="" />
@@ -55,7 +66,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <PopUp isPopUp={isPopUp} setIsPopUp={setIsPopUp} /> */}
+      <PopUp isPopUp={isPopUp} setIsPopUp={setIsPopUp} />
       <Footer setIsPopUp={setIsPopUp} />
     </>
   );

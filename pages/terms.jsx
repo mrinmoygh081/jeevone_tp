@@ -1,9 +1,15 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import PopUp from "@/components/PopUp";
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 
 const Terms = () => {
+  const [isPopUp, setIsPopUp] = useState({
+    val: false,
+    name: "",
+  });
+
   return (
     <>
       <Head>
@@ -127,6 +133,10 @@ const Terms = () => {
             any of the Services offered by JEEVONE. If you do not agree with any
             part of the Agreement, please do not use the Website/ App or avail
             any Services.
+          </p>
+          <p>
+            Your access to use of the Website/ App and the Services will be
+            solely at the discretion of JEEVONE.
           </p>
           <p>
             The Agreement is published in compliance of, and is governed by the
@@ -602,7 +612,7 @@ const Terms = () => {
               </li>
             </ol>
           </ul>
-          <h2>4. Refund Policy</h2>
+          <h2 id="refundPolicy">4. Refund Policy</h2>
           <ol>
             <li>
               In the event that, the Practitioner with whom User has booked a
@@ -809,10 +819,7 @@ const Terms = () => {
               law, in cases where,
               <ol type="i">
                 <li>
-                  JEEVONE reserves the right to suspend or terminate a User’s
-                  access to the Website/ App, Mobile Application and the
-                  Services with or without notice and to exercise any other
-                  remedy available under law, in cases where,
+                  Such User breaches any terms and conditions of the Agreement;
                 </li>
                 <li>
                   A third party reports violation of any of its right as a
@@ -968,7 +975,8 @@ const Terms = () => {
           </p>
         </div>
       </div>
-      <Footer />
+      <PopUp isPopUp={isPopUp} setIsPopUp={setIsPopUp} />
+      <Footer setIsPopUp={setIsPopUp} />
     </>
   );
 };

@@ -17,15 +17,18 @@ const handler = async (req, res) => {
           res,
           true,
           200,
-          "Thank you for submitting your application! We will revert after having a look at your application.",
+          "Our team will reach out to you soon.",
           result,
           null
         );
 
+        // let toEmails = "contact@jeevone.com, jijesh.gopalan@jeevone.com";
+        let toEmails = "mrinmoyghosh102@gmail.com";
+
         // Trigger a mail
         let mailDetails = {
           from: process.env.SENDER_MAIL,
-          to: process.env.RECEIVER_CAREER_MAIL,
+          to: toEmails,
           subject: `Enquiry from ${name} to Jeevone`,
           html: MAIL_TEMPLATE(req.body),
         };
