@@ -24,29 +24,45 @@ const Terms = () => {
           <p>
             TERMS & CONDITIONS: JEEVONE TERMS OF USE Jeevone Care And Tech
             Services Private Limited (“Jeevone”) is the author and publisher of
-            the internet resource www.jeevone.com; www.jeevone.in;
-            www.jeevone.org; www.jeevone.care; www.jeevone.health;
-            www.jeevone.net; www.jeevone.co.in, the mobile application ‘JEEVONE’
-            and the Jeevone Care And Tech Services Private Limited. Chatbot (any
-            component of the services offered which automatically interacts and
-            provides health information and wellness recommendations) (includes
-            www.jeevone.com; www.jeevone.in; www.jeevone.org; www.jeevone.care;
-            www.jeevone.health; www.jeevone.net; www.jeevone.co.in and any other
-            partner domains) are hereafter, jointly referred to as “Website/
-            App”. JEEVONE owns and operates the services provided through the
-            Website/ App, mobile applications and the chatbot.
+            the internet resource <a href="www.jeevone.com">www.jeevone.com</a>;{" "}
+            <a href="http://www.jeevone.in">www.jeevone.in</a>;
+            <a href="http://www.jeevone.org">www.jeevone.org</a>;{" "}
+            <a href="http://www.jeevone.care">www.jeevone.care</a>;
+            <a href="http://www.jeevone.health">www.jeevone.health</a>;
+            <a href="http://www.jeevone.net">www.jeevone.net</a>;{" "}
+            <a href="http://www.jeevone.co.in">www.jeevone.co.in</a>, the mobile
+            application ‘JEEVONE’ and the Jeevone Care And Tech Services Private
+            Limited. Chatbot (any component of the services offered which
+            automatically interacts and provides health information and wellness
+            recommendations) (includes{" "}
+            <a href="www.jeevone.com">www.jeevone.com</a>;{" "}
+            <a href="http://www.jeevone.in">www.jeevone.in</a>;
+            <a href="http://www.jeevone.org">www.jeevone.org</a>;{" "}
+            <a href="http://www.jeevone.care">www.jeevone.care</a>;
+            <a href="http://www.jeevone.health">www.jeevone.health</a>;
+            <a href="http://www.jeevone.net">www.jeevone.net</a>;{" "}
+            <a href="http://www.jeevone.co.in">www.jeevone.co.in</a> and any
+            other partner domains) are hereafter, jointly referred to as
+            “Website/ App”. JEEVONE owns and operates the services provided
+            through the Website/ App, mobile applications and the chatbot.
           </p>
           <h2>1. NATURE AND APPLICABILITY OF TERMS</h2>
           <p>
             Please carefully go through these terms and conditions (“Terms”) and
-            the privacy policy available at www.jeevone.com; www.jeevone.in;
-            www.jeevone.org; www.jeevone.care; www.jeevone.health;
-            www.jeevone.net; www.jeevone.co.in (“Privacy Policy”) before you
-            decide to access the Website/ App or avail the services made
-            available on the Website/ App by JEEVONE. These Terms and the
-            Privacy Policy together constitute a legal agreement (“Agreement”)
-            between you and JEEVONE in connection with your Jeevone to the
-            Website/ App and your use of the Services (as defined below).
+            the privacy policy available at{" "}
+            <a href="www.jeevone.com">www.jeevone.com</a>;{" "}
+            <a href="http://www.jeevone.in">www.jeevone.in</a>;
+            <a href="http://www.jeevone.org">www.jeevone.org</a>;{" "}
+            <a href="http://www.jeevone.care">www.jeevone.care</a>;
+            <a href="http://www.jeevone.health">www.jeevone.health</a>;
+            <a href="http://www.jeevone.net">www.jeevone.net</a>;{" "}
+            <a href="http://www.jeevone.co.in">www.jeevone.co.in</a> (“Privacy
+            Policy”) before you decide to access the Website/ App or avail the
+            services made available on the Website/ App by JEEVONE. These Terms
+            and the Privacy Policy together constitute a legal agreement
+            (“Agreement”) between you and JEEVONE in connection with your
+            Jeevone to the Website/ App and your use of the Services (as defined
+            below).
           </p>
           <p>The Agreement applies to you whether you are –</p>
           <ol type="I">
@@ -112,12 +128,14 @@ const Terms = () => {
             allowed to use the Website/ App and describes the manner in which we
             shall treat your account while you are registered as a member with
             us. If you have any questions about any part of the Agreement, feel
-            free to contact us at contact@jeevone.com. By downloading or
-            accessing the Website/ App to use the Services, you irrevocably
-            accept all the conditions stipulated in this Agreement and agree to
-            abide by them. This Agreement supersedes all previous oral and
-            written terms and conditions (if any) communicated to you. By
-            availing any Service, you signify your agreement to this Agreement.
+            free to contact us at{" "}
+            <a href="mailto:contact@jeevone.com">contact@jeevone.com</a>. By
+            downloading or accessing the Website/ App to use the Services, you
+            irrevocably accept all the conditions stipulated in this Agreement
+            and agree to abide by them. This Agreement supersedes all previous
+            oral and written terms and conditions (if any) communicated to you.
+            By availing any Service, you signify your agreement to this
+            Agreement.
           </p>
           <p>
             We reserve the right to modify or terminate any portion of the
@@ -617,7 +635,8 @@ const Terms = () => {
             <li>
               In the event that, the Practitioner with whom User has booked a
               paid appointment via the Website/ mobile app, has not been able to
-              meet the User, User will need to write to us at refund@jeevone.com
+              meet the User, User will need to write to us at{" "}
+              <a href="mailto:refund@jeevone.com">refund@jeevone.com</a>
               within five (5) days from the occurrence of such event; in which
               case, the entire consultation amount as mentioned on the Website
               will be refunded to the User within the next five (5) to six (6)
@@ -671,12 +690,18 @@ const Terms = () => {
           <h2>5. TERMS OF USE FOR PRACTITIONERS</h2>
           <p>
             The terms of use for Practitioners are defined under the
-            Practitioners’ terms of use (www.jeevone.com; www.jeevone.in;
-            www.jeevone.org; www.jeevone.care; www.jeevone.health;
-            www.jeevone.net; www.jeevone.co.in. Practitioners are bound by the
-            terms defined here and in the Practitioners’ terms of use. In case
-            of any clash/discrepancy/conflict, the Practitioner is bound to the
-            terms defined under the Practitioner’s terms of use.
+            Practitioners’ terms of use (
+            <a href="www.jeevone.com">www.jeevone.com</a>;{" "}
+            <a href="http://www.jeevone.in">www.jeevone.in</a>;
+            <a href="http://www.jeevone.org">www.jeevone.org</a>;{" "}
+            <a href="http://www.jeevone.care">www.jeevone.care</a>;
+            <a href="http://www.jeevone.health">www.jeevone.health</a>;
+            <a href="http://www.jeevone.net">www.jeevone.net</a>;{" "}
+            <a href="http://www.jeevone.co.in">www.jeevone.co.in</a>.
+            Practitioners are bound by the terms defined here and in the
+            Practitioners’ terms of use. In case of any
+            clash/discrepancy/conflict, the Practitioner is bound to the terms
+            defined under the Practitioner’s terms of use.
           </p>
           <h2>6. JEEVONE SPONSOR RIGHTS</h2>
           <ol>
@@ -943,7 +968,8 @@ const Terms = () => {
               If a User has any questions concerning JEEVONE, the Website/ App,
               this Agreement, the Services, or anything related to any of the
               foregoing, JEEVONE customer support can be reached at the
-              following email address support@jeevone.com
+              following email address{" "}
+              <a href="mailto:support@jeevone.com">support@jeevone.com</a>
             </li>
             <li>
               In accordance with the Information Technology Act, 2000, and the

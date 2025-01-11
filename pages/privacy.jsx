@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PopUp from "@/components/PopUp";
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 
 const Privacy = () => {
   const [isPopUp, setIsPopUp] = useState({
@@ -21,10 +21,15 @@ const Privacy = () => {
           <h1 className="text-center">JEEVONE PRIVACY POLICY</h1>
           <p>
             Jeevone Health Private Limited (“us”, “we”, or “Jeevone”) is the
-            author and publisher of the internet resource www.jeevone.com;
-            www.jeevone.in; www.jeevone.org; www.jeevone.care;
-            www.jeevone.health; www.jeevone.net; www.jeevone.co.in on the world
-            wide web as well as the software and applications provided by
+            author and publisher of the internet resource{" "}
+            <a href="http://www.jeevone.com">www.jeevone.com</a>;{" "}
+            <a href="http://www.jeevone.in">www.jeevone.in</a>;{" "}
+            <a href="http://www.jeevone.org">www.jeevone.org</a>;
+            <a href="http://www.jeevone.care">www.jeevone.care</a>;{" "}
+            <a href="http://www.jeevone.health">www.jeevone.health</a>;{" "}
+            <a href="http://www.jeevone.net">www.jeevone.net</a>;{" "}
+            <a href="http://www.jeevone.co.in">www.jeevone.co.in</a> on the
+            world wide web as well as the software and applications provided by
             Jeevone.
           </p>
           <p>
@@ -230,21 +235,23 @@ const Privacy = () => {
             </li>
             <li>
               If you wish to cancel your account or request that we no longer
-              use your information to provide you services, contact us through
-              support@jeevone.com. We will retain your information for as long
-              as your account with the Services is active and as needed to
-              provide you the Services. We shall not retain such information for
-              longer than is required for the purposes for which the information
-              may lawfully be used or is otherwise required under any other law
-              for the time being in force. After a period of time, your data may
-              be anonymized and aggregated, and then may be held by us as long
-              as necessary for us to provide our Services effectively, but our
-              use of the anonymized data will be solely for analytic purposes.{" "}
+              use your information to provide you services, contact us through{" "}
+              <a href="mailto:support@jeevone.com">support@jeevone.com</a>. We
+              will retain your information for as long as your account with the
+              Services is active and as needed to provide you the Services. We
+              shall not retain such information for longer than is required for
+              the purposes for which the information may lawfully be used or is
+              otherwise required under any other law for the time being in
+              force. After a period of time, your data may be anonymized and
+              aggregated, and then may be held by us as long as necessary for us
+              to provide our Services effectively, but our use of the anonymized
+              data will be solely for analytic purposes.{" "}
             </li>
             <li>
               If you wish to opt-out of receiving non-essential communications
               such as promotional and marketing-related information regarding
-              the Services, please send us an email at support@jeevone.com.
+              the Services, please send us an email at{" "}
+              <a href="mailto:support@jeevone.com">support@jeevone.com</a>.
             </li>
             <li>
               Jeevone may require the User to pay with a credit card, wire
@@ -402,13 +409,10 @@ const Privacy = () => {
                   Contacting Practitioners for offering new products or
                   services.
                 </li>
+                <li>Contacting Practitioners for taking product feedback.</li>
                 <li>
-                  Publishing such information on the Website and Mobile
-                  Application.
-                </li>
-                <li>
-                  Publishing such information on the Website and Mobile
-                  Application.
+                  Analyzing software usage patterns for improving product design
+                  and utility.
                 </li>
               </ol>
             </li>
@@ -449,10 +453,11 @@ const Privacy = () => {
               and you do not agree with the manner in which such information is
               collected, stored or used, then you may access, modify and delete
               such information by using options provided on the Website and
-              Mobile Application. In addition, you can, by sending an email to
-              support@jeevone.com, inquire whether Jeevone is in possession of
-              your personal data, and you may also require Jeevone to delete and
-              destroy all such information.{" "}
+              Mobile Application. In addition, you can, by sending an email to{" "}
+              <a href="mailto:support@jeevone.com">support@jeevone.com</a>,
+              inquire whether Jeevone is in possession of your personal data,
+              and you may also require Jeevone to delete and destroy all such
+              information.{" "}
             </li>
             <li>
               End-Users’ personally identifiable information, which they choose
@@ -594,9 +599,9 @@ const Privacy = () => {
               does not undertake any liability for any unauthorised use of your
               account and password. If you suspect any unauthorized use of your
               account, you must immediately notify Jeevone by sending an email
-              to support@jeevone.com. You shall be liable to indemnify Jeevone
-              due to any loss suffered by it due to such unauthorized use of
-              your account and password.
+              to <a href="mailto:support@jeevone.com">support@jeevone.com</a>.
+              You shall be liable to indemnify Jeevone due to any loss suffered
+              by it due to such unauthorized use of your account and password.
             </li>
             <li>
               Jeevone makes all User information accessible to its employees,
@@ -640,13 +645,14 @@ const Privacy = () => {
             for above, so that you may review the changed terms prior to
             continuing to use the Services. As always, if you object to any of
             the changes to our terms, and you no longer wish to use the
-            Services, you may contact support@jeevone.comto deactivate your
-            account. Unless stated otherwise, Jeevone’s current Privacy Policy
-            applies to all information that Jeevone has about You and Your
-            account. If a User uses the Services or accesses the Website or
-            Mobile Application after a notice of changes has been sent to such
-            User or published, such User hereby provides his/her/its consent to
-            the changed terms.
+            Services, you may contact{" "}
+            <a href="mailto:support@jeevone.com">support@jeevone.com</a> to
+            deactivate your account. Unless stated otherwise, Jeevone’s current
+            Privacy Policy applies to all information that Jeevone has about You
+            and Your account. If a User uses the Services or accesses the
+            Website or Mobile Application after a notice of changes has been
+            sent to such User or published, such User hereby provides
+            his/her/its consent to the changed terms.
           </p>
           <h2>CHILDREN'S AND MINOR'S PRIVACY</h2>
           <p>
@@ -674,10 +680,11 @@ const Privacy = () => {
           <p>
             Should you have questions about this Privacy Policy or Jeevone's
             information collection, use and disclosure practices, you may
-            contact us at the email address: support@jeevone.com. We will use
-            reasonable efforts to respond promptly to any requests, questions or
-            concerns, which you may have regarding our use of your personal
-            information. Schedule
+            contact us at the email address:{" "}
+            <a href="mailto:support@jeevone.com">support@jeevone.com</a>. We
+            will use reasonable efforts to respond promptly to any requests,
+            questions or concerns, which you may have regarding our use of your
+            personal information. Schedule
           </p>
           <p>Indicative List of Information by Nature of Service</p>
           <ol type="i">
@@ -687,11 +694,17 @@ const Privacy = () => {
               You can create an account by giving us information regarding your
               [name, mobile number, email address, password, date of birth,
               gender], and such other information as requested on the End-User
-              registration page www.jeevone.com; www.jeevone.in;
-              www.jeevone.org; www.jeevone.care; www.jeevone.health;
-              www.jeevone.net; www.jeevone.co.in. This is to enable us to
-              provide you with the facility to use the account to book your
-              appointments and store other health related information.
+              registration page <a href="www.jeevone.com">
+                www.jeevone.com
+              </a>; <a href="http://www.jeevone.in">www.jeevone.in</a>;
+              <a href="http://www.jeevone.org">www.jeevone.org</a>;{" "}
+              <a href="http://www.jeevone.care">www.jeevone.care</a>;
+              <a href="http://www.jeevone.health">www.jeevone.health</a>;
+              <a href="http://www.jeevone.net">www.jeevone.net</a>;{" "}
+              <a href="http://www.jeevone.co.in">www.jeevone.co.in</a>. This is
+              to enable us to provide you with the facility to use the account
+              to book your appointments and store other health related
+              information.
             </li>
             <li>
               Practitioner availing of the service on the Website or ‘Jeevone’

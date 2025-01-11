@@ -1553,3 +1553,11 @@ input[type="number"]::-webkit-outer-spin-button {
 .policies h3 {
   font-size: 20px;
 }
+.policies a {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.policies a:hover {
+  color: #0a58ca;
+}
