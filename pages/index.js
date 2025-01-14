@@ -10,12 +10,14 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
 import PopUp from "@/components/PopUp";
 import { useState } from "react";
+import PopUpDownload from "@/components/PopUpDownload";
 
 export default function Home() {
   const [isPopUp, setIsPopUp] = useState({
     val: false,
     name: "",
   });
+  const [isPopUpDownload, setIsPopUpDownload] = useState(false);
   return (
     <>
       <Header />
@@ -47,46 +49,22 @@ export default function Home() {
               className="mySwiper"
             >
               <SwiperSlide className="swiper-slide">
-                <img
-                  src="/images/hero_slider/img1.png"
-                  alt=""
-                  className="banner_img"
-                />
+                <img src="/images/hero_slider/img1.png" alt="" className="banner_img" />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                <img
-                  src="/images/hero_slider/img2.png"
-                  alt=""
-                  className="banner_img"
-                />
+                <img src="/images/hero_slider/img2.png" alt="" className="banner_img" />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                <img
-                  src="/images/hero_slider/img3.png"
-                  alt=""
-                  className="banner_img"
-                />
+                <img src="/images/hero_slider/img3.png" alt="" className="banner_img" />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                <img
-                  src="/images/hero_slider/img4.png"
-                  alt=""
-                  className="banner_img"
-                />
+                <img src="/images/hero_slider/img4.png" alt="" className="banner_img" />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                <img
-                  src="/images/hero_slider/img5.png"
-                  alt=""
-                  className="banner_img"
-                />
+                <img src="/images/hero_slider/img5.png" alt="" className="banner_img" />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                <img
-                  src="/images/hero_slider/img6.png"
-                  alt=""
-                  className="banner_img"
-                />
+                <img src="/images/hero_slider/img6.png" alt="" className="banner_img" />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -96,16 +74,10 @@ export default function Home() {
           <div className="icon_box">
             <h5>Download now</h5>
             <div className="store_logo">
-              <a
-                href="https://apps.apple.com/in/app/jeevone/id6471591844"
-                target="_blank"
-              >
+              <a href="https://apps.apple.com/in/app/jeevone/id6471591844" target="_blank">
                 <img src="./images/app-store.png" alt="Jeevone Appstore" />
               </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.jeevone.consumerapp&pcampaignid=web_share"
-                target="_blank"
-              >
+              <a href="https://play.google.com/store/apps/details?id=com.jeevone.consumerapp&pcampaignid=web_share" target="_blank">
                 <img src="./images/play-store.png" alt="Jeevone Playstore" />
               </a>
             </div>
@@ -132,43 +104,12 @@ export default function Home() {
               <div className="col-12">
                 <div className="section_links">
                   <div className="warpper">
-                    <input
-                      className="radio"
-                      id="one"
-                      name="group"
-                      type="radio"
-                    />
-                    <input
-                      className="radio"
-                      id="two"
-                      name="group"
-                      type="radio"
-                    />
-                    <input
-                      className="radio"
-                      id="three"
-                      name="group"
-                      type="radio"
-                      defaultChecked
-                    />
-                    <input
-                      className="radio"
-                      id="four"
-                      name="group"
-                      type="radio"
-                    />
-                    <input
-                      className="radio"
-                      id="five"
-                      name="group"
-                      type="radio"
-                    />
-                    <input
-                      className="radio"
-                      id="six"
-                      name="group"
-                      type="radio"
-                    />
+                    <input className="radio" id="one" name="group" type="radio" />
+                    <input className="radio" id="two" name="group" type="radio" />
+                    <input className="radio" id="three" name="group" type="radio" defaultChecked />
+                    <input className="radio" id="four" name="group" type="radio" />
+                    <input className="radio" id="five" name="group" type="radio" />
+                    <input className="radio" id="six" name="group" type="radio" />
                     <div className="tabs">
                       <label className="tab" id="one-tab" htmlFor="one">
                         <img src="/images/icons/img6.png" alt="" />
@@ -253,7 +194,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="section_links_btn">
-                    <a href="#download_btns" className="tab_button">
+                    <a href="#download_btns" onClick={() => setIsPopUpDownload(true)} className="tab_button">
                       Know More
                     </a>
                   </div>
@@ -268,12 +209,7 @@ export default function Home() {
             <div className="row">
               <div className="col-12 col-md-4 text-center">
                 <div className="Reminder_box_heading">
-                  <img
-                    src="/images/my_corner_icon.png"
-                    alt="testimonial"
-                    className="img-fluid"
-                    style={{ width: "30px", height: "30px", marginTop: "10px" }}
-                  />
+                  <img src="/images/my_corner_icon.png" alt="testimonial" className="img-fluid" style={{ width: "30px", height: "30px", marginTop: "10px" }} />
                   <div className="text-start">
                     <h2>My Corner</h2>
                     <p>Your interests in one place</p>
@@ -296,12 +232,14 @@ export default function Home() {
                       <div className="my_corner_card_2">
                         <img src="/images/myCorner-2.png" alt="" />
                         <div className="card_text2">
-                          <a href="#download_btns">Special Offer</a>
+                          <a href="#download_btns" onClick={() => setIsPopUpDownload(true)}>
+                            Special Offer
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <a href="#download_btns" className="tab_button mt-25">
+                  <a href="#download_btns" onClick={() => setIsPopUpDownload(true)} className="tab_button mt-25">
                     READ MORE
                   </a>
                 </div>
@@ -314,11 +252,7 @@ export default function Home() {
           <div className="container long_card">
             <div>
               <div className="Reminder_box_heading">
-                <img
-                  src="/images/Reminders-icon.png"
-                  alt="testimonial"
-                  className="img-fluid"
-                />
+                <img src="/images/Reminders-icon.png" alt="testimonial" className="img-fluid" />
                 <h2>Reminders</h2>
               </div>
               <p className="text-center">Keep yourself updated</p>
@@ -327,40 +261,36 @@ export default function Home() {
             <div className="container mt-5">
               <div className="row">
                 <div className="col-md-3 col-6 reminder">
-                  <a href="#download_btns">
+                  <button onClick={() => setIsPopUpDownload(true)} href="#download_btns">
                     <div className="Reminder_box">
                       <img src="/images/Appointments.png" alt="" />
                     </div>
                     <h6>Appointments</h6>
-                  </a>
+                  </button>
                 </div>
                 <div className="col-md-3 col-6 reminder">
-                  <a href="#download_btns">
+                  <button onClick={() => setIsPopUpDownload(true)}>
                     <div className="Reminder_box">
                       <img src="/images/Re-order-Medicines.png" alt="" />
                     </div>
                     <h6>Re-order Medicines</h6>
-                  </a>
+                  </button>
                 </div>
                 <div className="col-md-3 col-6 reminder">
-                  <a href="#download_btns">
+                  <button onClick={() => setIsPopUpDownload(true)}>
                     <div className="Reminder_box">
-                      <img
-                        src="/images/Vaccinations.png"
-                        alt=""
-                        style={{ transform: "translateX(6px)" }}
-                      />
+                      <img src="/images/Vaccinations.png" alt="" style={{ transform: "translateX(6px)" }} />
                     </div>
                     <h6>Vaccinations</h6>
-                  </a>
+                  </button>
                 </div>
                 <div className="col-md-3 col-6 reminder">
-                  <a href="#download_btns">
+                  <button onClick={() => setIsPopUpDownload(true)}>
                     <div className="Reminder_box">
                       <img src="/images/Renewals.png" alt="" />
                     </div>
                     <h6>Renewals</h6>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -370,11 +300,7 @@ export default function Home() {
         <section className="shop_section mb-5">
           <div className="mb-5">
             <div className="shop_box_heading">
-              <img
-                src="/images/shop-icon.png"
-                alt="shop"
-                className="shop-icon"
-              />
+              <img src="/images/shop-icon.png" alt="shop" className="shop-icon" />
               <h2>Shop</h2>
             </div>
             <p className="text-center">A store at your fingertips</p>
@@ -384,24 +310,17 @@ export default function Home() {
               <div className="col-12 col-md-6 col-lg-4 card1 position-relative">
                 <div>
                   <h2>Doctor Appointments</h2>
-                  <p>
-                    Stay in peak mental and physical condition with regular
-                    appointments
-                  </p>
+                  <p>Stay in peak mental and physical condition with regular appointments</p>
                 </div>
 
                 <div className="position-relative">
                   <div className="position-relative">
-                    <img
-                      src="/images/doctor.png"
-                      alt=""
-                      className="w-100 rounded"
-                    />
+                    <img src="/images/doctor.png" alt="" className="w-100 rounded" />
                     <div className="overlay"></div>
                   </div>
-                  <a href="#download_btns" className="card_button">
+                  <button onClick={() => setIsPopUpDownload(true)} className="card_button">
                     Book Now
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 card1 position-relative">
@@ -415,9 +334,9 @@ export default function Home() {
                     <img src="/images/medicines.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <a href="#download_btns" className="card_button">
+                  <button onClick={() => setIsPopUpDownload(true)} className="card_button">
                     Book Now
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 card1 position-relative">
@@ -435,9 +354,9 @@ export default function Home() {
                     <img src="/images/tests.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <a href="#download_btns" className="card_button">
+                  <button onClick={() => setIsPopUpDownload(true)} className="card_button">
                     Book Now
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -453,9 +372,9 @@ export default function Home() {
                     <img src="/images/home-care.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <a href="#download_btns" className="card_button">
+                  <button onClick={() => setIsPopUpDownload(true)} className="card_button">
                     Book Now
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 card1 position-relative">
@@ -469,9 +388,9 @@ export default function Home() {
                     <img src="/images/Medical-Equipment.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <a href="#download_btns" className="card_button">
+                  <button onClick={() => setIsPopUpDownload(true)} className="card_button">
                     Book Now
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 card1 position-relative">
@@ -485,9 +404,9 @@ export default function Home() {
                     <img src="/images/lifestyle.png" alt="" />
                     <div className="overlay"></div>
                   </div>
-                  <a href="#download_btns" className="card_button">
+                  <button onClick={() => setIsPopUpDownload(true)} className="card_button">
                     Book Now
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -496,11 +415,7 @@ export default function Home() {
 
         <section>
           <div className="container about_heading my-5">
-            <img
-              src="/images/doctor-icon.png"
-              alt="doctor"
-              className="img-fluid"
-            />
+            <img src="/images/doctor-icon.png" alt="doctor" className="img-fluid" />
             <h2>Are You A Doctor?</h2>
           </div>
           <div className="container-fluid">
@@ -530,7 +445,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="about_section">
+        <section className="about_section" id="aboutUs">
           <h2>ABOUT US</h2>
           <div className="about_1st">
             <div className="container">
@@ -538,16 +453,12 @@ export default function Home() {
                 <div className="col-12 col-md-6">
                   <h3>Beginning</h3>
                   <p className="firstparagrph">
-                    Simple can be sophisticated.This idea marked the beginning
-                    of an effort to create a platform that takes care of all
-                    your health needs and requirements through an interface that
-                    is modern and functional.
+                    Simple can be sophisticated.This idea marked the beginning of an effort to create a platform that takes care of all your health needs and requirements through
+                    an interface that is modern and functional.
                   </p>
                   <p>
-                    The genesis was the need for availability, accessibility,
-                    and convenience which could be leveraged through technology
-                    using integrated, innovative, and simple solutions that are
-                    straightforward and easy to use.
+                    The genesis was the need for availability, accessibility, and convenience which could be leveraged through technology using integrated, innovative, and simple
+                    solutions that are straightforward and easy to use.
                   </p>
                 </div>
                 <div className="col-12 col-md-6">
@@ -561,20 +472,13 @@ export default function Home() {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-12 col-md-6">
-                  <img
-                    src="/images/Vision 2.png"
-                    alt=""
-                    className="img_trans_x"
-                  />
+                  <img src="/images/Vision 2.png" alt="" className="img_trans_x" />
                 </div>
                 <div className="col-12 col-md-6">
                   <h3>Vision</h3>
                   <p className="firstparagrph">
-                    Our vision is to keep moving forward and keep evolving in
-                    pursuit of genuinely human-centric solutions using
-                    cutting-edge innovation.We want to be synonymous with
-                    new-age ingenuity that enhances the lives of people around
-                    the world.
+                    Our vision is to keep moving forward and keep evolving in pursuit of genuinely human-centric solutions using cutting-edge innovation.We want to be synonymous
+                    with new-age ingenuity that enhances the lives of people around the world.
                   </p>
                 </div>
               </div>
@@ -587,13 +491,9 @@ export default function Home() {
                 <div className="col-12 col-md-6">
                   <h3>solution</h3>
                   <p className="firstparagrph">
-                    As technology becomes more sophisticated, the element of
-                    simplicity slowly erodes. This is especially true in the
-                    healthcare industry. We understand that you expect
-                    simplicity, functionality, convenience, and style in a
-                    single package. We are committed to solving this problem by
-                    analysing our dynamic world and evaluating the elements of
-                    life through a novel and creative pair of eyes.
+                    As technology becomes more sophisticated, the element of simplicity slowly erodes. This is especially true in the healthcare industry. We understand that you
+                    expect simplicity, functionality, convenience, and style in a single package. We are committed to solving this problem by analysing our dynamic world and
+                    evaluating the elements of life through a novel and creative pair of eyes.
                   </p>
                 </div>
                 <div className="col-12 col-md-6">
@@ -612,18 +512,12 @@ export default function Home() {
                 <div className="col-12 col-md-6">
                   <h3>Company</h3>
                   <p className="firstparagrph">
-                    The culmination of this thought process was Jeevone;an
-                    interconnected and integrated interface that enables
-                    effective collaboration and communication for all the
-                    stakeholders involved in the healthcare industry. It is a
-                    small step in a massive endeavor to accomplish our mission
-                    of transforming and streamlining the lives of millions of
-                    individuals worldwide.
+                    The culmination of this thought process was Jeevone;an interconnected and integrated interface that enables effective collaboration and communication for all
+                    the stakeholders involved in the healthcare industry. It is a small step in a massive endeavor to accomplish our mission of transforming and streamlining the
+                    lives of millions of individuals worldwide.
                   </p>
                   <p>
-                    When designing Jeevone, we set out to streamline the most
-                    mundane, yet important, aspects of healthcare by reducing
-                    complexities and focusing on ease of use.
+                    When designing Jeevone, we set out to streamline the most mundane, yet important, aspects of healthcare by reducing complexities and focusing on ease of use.
                   </p>
                 </div>
               </div>
@@ -636,17 +530,12 @@ export default function Home() {
                 <div className="col-12 col-md-5">
                   <h3>design</h3>
                   <p className="firstparagrph">
-                    Jeevone is designed for the world and is universal. This is
-                    the first step in a journey of constant evolution and
-                    innovation.At Jeevone, change is the only constant.
+                    Jeevone is designed for the world and is universal. This is the first step in a journey of constant evolution and innovation.At Jeevone, change is the only
+                    constant.
                   </p>
                 </div>
                 <div className="col-12 col-md-7">
-                  <img
-                    src="/images/design.png"
-                    alt=""
-                    className="img_trans_x_opp"
-                  />
+                  <img src="/images/design.png" alt="" className="img_trans_x_opp" />
                 </div>
               </div>
             </div>
@@ -681,11 +570,7 @@ export default function Home() {
 
         <section className="testimonial">
           <div className="testimonial_heading">
-            <img
-              src="/images/testimonial.png"
-              alt="testimonial"
-              className="img-fluid"
-            />
+            <img src="/images/testimonial.png" alt="testimonial" className="img-fluid" />
             <h2>Testimonials</h2>
           </div>
           <div className="container-fluid">
@@ -697,10 +582,7 @@ export default function Home() {
           <div className="container review_box">
             <div className="review_box_alignment">
               <div className="testimonial_box1">
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 <div className="icon_shape icon_shape_res">
                   <a href="#download_btns">
                     <FontAwesomeIcon icon={faFacebookF} />
@@ -708,10 +590,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="testimonial_box_blue">
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 <div className="icon_shape">
                   <a href="#download_btns">
                     <FontAwesomeIcon icon={faFacebookF} />
@@ -719,10 +598,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="testimonial_box2">
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 <div className="icon_shape icon_shape_res">
                   <a href="#download_btns">
                     <FontAwesomeIcon icon={faFacebookF} />
@@ -734,6 +610,7 @@ export default function Home() {
         </section>
       </main>
       <PopUp isPopUp={isPopUp} setIsPopUp={setIsPopUp} />
+      <PopUpDownload isPopUp={isPopUpDownload} setIsPopUp={setIsPopUpDownload} />
       <Footer setIsPopUp={setIsPopUp} />
     </>
   );

@@ -13,14 +13,7 @@ const handler = async (req, res) => {
         values: [myself, name, phone, email],
       });
       if (result) {
-        sendRes(
-          res,
-          true,
-          200,
-          "Our team will reach out to you soon.",
-          result,
-          null
-        );
+        return sendRes(res, true, 200, "Our team will reach out to you soon.", result, null);
 
         let toEmails = "contact@jeevone.com, jijesh.gopalan@jeevone.com";
         // let toEmails = "mrinmoyghosh102@gmail.com";

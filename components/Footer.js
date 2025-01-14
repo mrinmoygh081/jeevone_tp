@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import swal from "sweetalert";
 import { registerEnquiryHandler } from "@/services/APIs";
@@ -30,16 +25,12 @@ function Footer({ setIsPopUp }) {
   const submitHandler = async () => {
     setIsLoading(true);
     const { name, email, phone } = form;
-    if (
-      !name ||
-      name === "" ||
-      !email ||
-      email === "" ||
-      !phone ||
-      phone === ""
-    ) {
+    if (!name || name === "" || !email || email === "" || !phone || phone === "") {
       setIsLoading(false);
-      return toast.error("Please enter all required fields.");
+      return swal({
+        text: "Please enter all required fields.",
+        icon: "warning",
+      });
     }
     let res = await registerEnquiryHandler(form);
     if (res?.status) {
@@ -74,7 +65,7 @@ function Footer({ setIsPopUp }) {
                     <h6>About Us</h6>
                     <ul>
                       <li>
-                        <a href="#download_btns">Jeevone Story</a>
+                        <a href="/#aboutUs">Jeevone Story</a>
                       </li>
                       <li>
                         <a href="/terms" target="_blank">
@@ -130,18 +121,12 @@ function Footer({ setIsPopUp }) {
                   <h6>Connect</h6>
                   <div className="icon_list">
                     <div className="icon_shape_footer">
-                      <a
-                        href="https://www.facebook.com/people/Jeevone-Care/100095415790862/"
-                        target="_blank"
-                      >
+                      <a href="https://www.facebook.com/people/Jeevone-Care/100095415790862/" target="_blank">
                         <FontAwesomeIcon icon={faFacebookF} />
                       </a>
                     </div>
                     <div className="icon_shape_footer">
-                      <a
-                        href="https://www.instagram.com/jeevone_care/"
-                        target="_blank"
-                      >
+                      <a href="https://www.instagram.com/jeevone_care/" target="_blank">
                         <FontAwesomeIcon icon={faInstagram} />
                       </a>
                     </div>
@@ -156,13 +141,7 @@ function Footer({ setIsPopUp }) {
                   <div className="from_row">
                     <div className="form_width">
                       <label htmlFor="name">I am a </label>
-                      <select
-                        name="myself"
-                        id="myself"
-                        className="form_ctr"
-                        style={{ paddingTop: "8px" }}
-                        onChange={handleChange}
-                      >
+                      <select name="myself" id="myself" className="form_ctr" style={{ paddingTop: "8px" }} onChange={handleChange}>
                         <option value="Doctor" defaultValue={true}>
                           Doctor
                         </option>
@@ -172,51 +151,23 @@ function Footer({ setIsPopUp }) {
                     </div>
                     <div className="form_width">
                       <label htmlFor="name">Name</label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="form_ctr"
-                        placeholder="Enter Name"
-                        value={form?.name}
-                        onChange={handleChange}
-                      />
+                      <input type="text" id="name" name="name" className="form_ctr" placeholder="Enter Name" value={form?.name} onChange={handleChange} />
                     </div>
                   </div>
 
                   <div className="from_row">
                     <div className="form_width">
                       <label htmlFor="phone">Phone </label>
-                      <input
-                        type="text"
-                        id="phone"
-                        name="phone"
-                        className="form_ctr"
-                        placeholder="Enter Phone Number"
-                        value={form?.phone}
-                        onChange={handleChange}
-                      />
+                      <input type="text" id="phone" name="phone" className="form_ctr" placeholder="Enter Phone Number" value={form?.phone} onChange={handleChange} />
                     </div>
                     <div className="form_width">
                       <label htmlFor="email">Email </label>
-                      <input
-                        type="text"
-                        id="email"
-                        name="email"
-                        className="form_ctr"
-                        placeholder="Enter Email ID"
-                        value={form?.email}
-                        onChange={handleChange}
-                      />
+                      <input type="text" id="email" name="email" className="form_ctr" placeholder="Enter Email ID" value={form?.email} onChange={handleChange} />
                     </div>
                   </div>
 
                   <div className="from_submit">
-                    <button
-                      type="button"
-                      className="form_btn"
-                      onClick={submitHandler}
-                    >
+                    <button type="button" className="form_btn" onClick={submitHandler}>
                       {isLoading ? "Loading..." : "SUBMIT"}
                     </button>
                   </div>

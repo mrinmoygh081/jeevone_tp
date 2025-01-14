@@ -22,16 +22,12 @@ const PopUp = ({ isPopUp, setIsPopUp }) => {
   const submitHandler = async () => {
     setIsLoading(true);
     const { name, email, phone } = form;
-    if (
-      !name ||
-      name === "" ||
-      !email ||
-      email === "" ||
-      !phone ||
-      phone === ""
-    ) {
+    if (!name || name === "" || !email || email === "" || !phone || phone === "") {
       setIsLoading(false);
-      return toast.error("Please enter all required fields.");
+      return swal({
+        text: "Please enter all required fields.",
+        icon: "warning",
+      });
     }
     let res = await registerEnquiryHandler(form);
     if (res?.status) {
@@ -81,13 +77,7 @@ const PopUp = ({ isPopUp, setIsPopUp }) => {
                 <div className="from_row">
                   <div className="form_width">
                     <label htmlFor="name">I am a </label>
-                    <select
-                      name="myself"
-                      id="myself"
-                      className="form_ctr"
-                      style={{ paddingTop: "8px" }}
-                      onChange={handleChange}
-                    >
+                    <select name="myself" id="myself" className="form_ctr" style={{ paddingTop: "8px" }} onChange={handleChange}>
                       <option value="Doctor" defaultValue={true}>
                         Doctor
                       </option>
@@ -97,52 +87,23 @@ const PopUp = ({ isPopUp, setIsPopUp }) => {
                   </div>
                   <div className="form_width">
                     <label htmlFor="name">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="form_ctr"
-                      placeholder="Enter Name"
-                      value={form?.name}
-                      onChange={handleChange}
-                    />
+                    <input type="text" id="name" name="name" className="form_ctr" placeholder="Enter Name" value={form?.name} onChange={handleChange} />
                   </div>
                 </div>
 
                 <div className="from_row">
                   <div className="form_width">
                     <label htmlFor="phone">Phone </label>
-                    <input
-                      type="text"
-                      id="phone"
-                      name="phone"
-                      className="form_ctr"
-                      placeholder="Enter Phone Number"
-                      value={form?.phone}
-                      onChange={handleChange}
-                    />
+                    <input type="text" id="phone" name="phone" className="form_ctr" placeholder="Enter Phone Number" value={form?.phone} onChange={handleChange} />
                   </div>
                   <div className="form_width">
                     <label htmlFor="email">Email </label>
-                    <input
-                      type="text"
-                      id="email"
-                      name="email"
-                      className="form_ctr"
-                      placeholder="Enter Email ID"
-                      value={form?.email}
-                      onChange={handleChange}
-                    />
+                    <input type="text" id="email" name="email" className="form_ctr" placeholder="Enter Email ID" value={form?.email} onChange={handleChange} />
                   </div>
                 </div>
 
                 <div className="from_submit">
-                  <button
-                    type="button"
-                    className="form_btn"
-                    disabled={isLoading}
-                    onClick={submitHandler}
-                  >
+                  <button type="button" className="form_btn" disabled={isLoading} onClick={submitHandler}>
                     {isLoading ? "Loading..." : "SUBMIT"}
                   </button>
                 </div>

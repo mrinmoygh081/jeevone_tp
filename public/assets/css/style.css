@@ -611,7 +611,10 @@ input[type="number"]::-webkit-outer-spin-button {
   justify-content: center;
   align-items: center;
 }
-
+.reminder button {
+  background-color: inherit;
+  border: none;
+}
 .reminder h6 {
   margin-top: 15px;
   font-weight: 600;
@@ -727,12 +730,7 @@ input[type="number"]::-webkit-outer-spin-button {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(10, 4, 122, 1) 0%,
-    rgba(9, 9, 121, 1) 6%,
-    transparent 32%
-  );
+  background: linear-gradient(0deg, rgba(10, 4, 122, 1) 0%, rgba(9, 9, 121, 1) 6%, transparent 32%);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -1340,6 +1338,13 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #fff;
   font-size: 24px;
   cursor: pointer;
+}
+.popup_overlay .form_popup .form_box {
+  width: 100%;
+}
+.popup_overlay .form_popup .form_box .icon_box {
+  border-radius: 15px;
+  margin-bottom: 0;
 }
 
 /* Responsive style start */
