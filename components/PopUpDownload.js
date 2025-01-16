@@ -9,7 +9,7 @@ const PopUpDownload = ({ isPopUp, setIsPopUp }) => {
     <>
       {isPopUp && (
         <div
-          className="popup_overlay"
+          className="popup_overlay download"
           onClick={(e) => {
             if (e.target.classList.contains("popup_overlay")) {
               setIsPopUp(false);

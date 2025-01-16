@@ -1346,6 +1346,16 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 15px;
   margin-bottom: 0;
 }
+.popup_overlay.download .form_popup .form_box {
+  background-color: #ffffff;
+}
+.popup_overlay.download .form_popup .form_box .icon_box {
+  box-shadow: none;
+  padding: 15px;
+}
+.popup_overlay.download .form_popup .close {
+  color: #000;
+}
 
 /* Responsive style start */
 
