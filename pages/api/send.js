@@ -16,14 +16,12 @@ const handler = async (req, res) => {
         sendRes(res, true, 200, "Our team will reach out to you soon.", result, null);
 
         let toEmails = "contact@jeevone.com, jijesh.gopalan@jeevone.com";
-        // let toEmails = "mrinmoyghosh102@gmail.com";
 
         // Trigger a mail
         let mailDetails = {
           from: process.env.SENDER_MAIL,
           to: toEmails,
           subject: `Enquiry from ${name} to Jeevone`,
-          bcc: "mrinmoyghosh102@gmail.com",
           html: MAIL_TEMPLATE(req.body),
         };
         SENDMAIL(mailDetails, function (err, data) {
