@@ -18,10 +18,7 @@ export const registerEnquiryHandler = async (form, initialValue) => {
   };
 
   try {
-    let response = await fetch(
-      `${process.env.NEXT_PUBLIC_BACKEND_API}/send`,
-      requestOptions
-    );
+    let response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/send`, requestOptions);
 
     const result = await response.json();
     if (response.ok) {
@@ -36,7 +33,7 @@ export const registerEnquiryHandler = async (form, initialValue) => {
     console.error("error", error.message);
     return {
       status: true,
-      message: result?.message || "Something went wrong!",
+      message: error?.message || "Something went wrong!",
     };
   }
 };

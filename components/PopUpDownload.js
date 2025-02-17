@@ -1,8 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { IoMdCloseCircleOutline } from "react-icons/io";
-import swal from "sweetalert";
-import { toast } from "react-toastify";
-import { registerEnquiryHandler } from "@/services/APIs";
 
 const PopUpDownload = ({ isPopUp, setIsPopUp }) => {
   return (
